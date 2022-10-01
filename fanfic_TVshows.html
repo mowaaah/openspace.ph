@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Fan-Fiction Books 📗</title>
+
+	<!--ONLINE CSS-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+		  rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+		  crossorigin="anonymous">
+    <link rel="stylesheet" href="second stylesheet.css">
+		
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+		    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+		    crossorigin="anonymous">	
+    </script>
+
+	<!--ICON ON TITLE BAR-->
+	<link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+
+	<!--ICONS-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+			
+</head>
+<body style="background-color:#F8EDE8;">
+    <!--start of navbar-->
+        <div class="container-fluid" style="background-color:#F8E0D5;">
+            <div class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="indexMain_page.html">
+                    <img src="website logo.png" style="width: 200px;">
+                </a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#NavBarMenu">
+                    <span class="navbar-toggler-icon">
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="NavBarMenu">
+                    <ul class="navbar-nav text-center me-3 ms-3">
+                        <li class="nav-item">
+                            <a class="nav-link nabvrButton" href="indexMain_page.html">Home</a>
+                        </li> 
+                        <li class="nav-item">
+                            <a class="nav-link nabvrButton" href="about_page.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle nabvrButton" href="#" role="button" 
+                            data-bs-toggle="dropdown" aria-expanded="false">Book Categories</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item nabvrButton" href="all-books.html">All Books📚</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item nabvrButton" href="fiction_Action.html">Fiction Books📕</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item nabvrButton" href="nonfic_AutoBio.html">Non-Fiction Books📙</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item nabvrButton" href="fanfic_Movies.html">Fan-Fiction Books📗</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item nabvrButton" href="mangraph_Manga.html">Manga/Graphic Books📘</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nabvrButton" href="community_page.html">Community</a>
+                        </li>
+                    </ul>
+                    
+                    <form class="input-group d-lg-flex w-75 justify-content-center mx-auto srchbar" role="search">
+                        <input type="text" class="form-control border-0 rounded-0" placeholder="Books, Authors, Community, etc." aria-label="Search">
+                        <button type="text" class="srh"><i class="bi bi-search"></i></button>
+                    </form>
+
+                    <div class="col-lg-1 d-flex justify-content-center mx-1 my-2">
+                        <div class="logBttn"> <!--adding modal-->
+                            <button type="button" class="form-control btn rounded-0 logBttn"
+                            data-bs-toggle="modal"
+                            data-bs-target="#modalOne">Log In
+                            </button>
+                            <div class="modal fade" id="modalOne" tabindex="-1" style="background-color: #FFECE3;">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header" style="background-color: #F8E0D5;">
+                                            <h5 class="modal-title" id="modalTitle" style="color:#4E220E;">OpenSpace: Log In
+                                            <img src="website-logo.png" style="width: 10%;"></h5>
+                                            <button class="btn-close"
+                                            type="button"
+                                            data-bs-dismiss="modal"
+                                            aria-label="close">
+                                            </button>
+                                        </div>
+                                        <!--end modal header-->
+                                        <div class="modal-body" style="background-color: #F8EDE8;">
+                                            <form action="">
+                                                <!-- Email input -->
+                                                <div class="form-floating mb-4">
+                                                    <input type="email" id="emailSignIn" class="form-control form-control-lg rounded-0" placeholder="Email Address" required>
+                                                    <label for="emailSignIn" style="color:#4E220E;">Email Address</label>
+                                                </div>
+                                                <!-- Password input -->
+                                                <div class="form-floating mb-4">
+                                                    <input type="password" id="passwordSignIn" class="form-control form-control-lg rounded-0" placeholder="Password" required>
+                                                    <label for="passwordSignIn" style="color:#4E220E;">Password</label>
+                                                </div>
+                                            
+                                                <div class="d-flex justify-content-between">
+                                                <!-- Checkbox -->
+                                                    <div class="form-check mb-0">
+                                                        <input class="form-check-input me-2" type="checkbox" value="rememberMe" id="rememberMe" />
+                                                        <label class="form-check-label" for="rememberMe" style="color:#4E220E;">
+                                                            Remember me
+                                                        </label>
+                                                    </div>
+                                                    <a href="#" style="color: #4E220E; opacity: 90%;">Forgot password?</a>
+                                                </div>
+                                            </form>     
+                                        </div>
+                                        <!--end of modal body-->
+                                        <div class="modal-footer justify-content-center" style="background-color: #F8E0D5;">
+                                            <hr style="color: #4E220E;">
+                                            <div class="text-center text-lg-center mt-auto pt-2">
+                                                <!--log in button-->        
+                                                <a href="" class="btn-outline-light text-center" style="color: #4E220E;"><button type="submit" class="btn signinbtn w-25 mb-3">
+                                                    Login</button></a>
+                                                <!--log in button--> 
+                                                <p class="small fw-bold mb-0 text-lg-center mb-2" style="color:#4E220E;">Don't have an account? 
+                                                    <a href="signUp_page.html" style="color: #8c6e52">Register to Join us!</a>
+                                                </p>
+                                            </div>
+                                            <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-center">
+                                                <p class="fw-normal mb-3 mt-3 mx-2 text-center" style="color: #4E220E;">Sign in with</p>
+                                                <button type="button" class="btn btncircle mx-2 align" style="background-color: #F8EDE8;">
+                                                    <a href="https://www.facebook.com/"><i class="bi bi-facebook" style="font-size: 10pt; color: #4E220E;"></i></a>
+                                                </button>
+                                            
+                                                <button type="button" class="btn btncircle mx-2" style="background-color: #F8EDE8;">
+                                                    <a href="https://twitter.com/"><i class="bi bi-twitter" style="font-size: 10pt; color: #4E220E;"></i></a>
+                                                </button>
+                                            
+                                                <button type="button" class="btn btncircle mx-2" style="background-color: #F8EDE8;">
+                                                    <a href="https://accounts.google.com/">
+                                                        <i class="bi bi-google" style="font-size: 10pt; color: #4E220E;"></i></a>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <!--end of modal footer-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end of modal-->
+                    </div>
+                    <div class="col-lg-1 d-flex justify-content-center">
+                        <a href="signUp_page.html" class="logjoinBttn"><button type="button" class="form-control btn logjoinBttn">Join Us</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--end of navbar-->
+    <!--start of accordion and books-->
+    <div class="container-fluid">
+        <div class="row">
+            
+            <div class="col-md-3 my-5 mx-auto align-items-center justify-content-center">
+                <h2 class="display-6 text-center" style="color:#4E220E;">FAN FICTION CATEGORIES</h2>
+                <div class="accordion" id="fanfictionAccord">
+                    <div class="accordion-item"><!--accordion 1-->
+                        <h2 class="accordion-header" id="headingOne"><!--a-header-->
+                            <button class="accordion-button collapsed in btnAccord"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#accordBody1"
+                                    aria-expanded="true"
+                                    aria-controls="accordBody1">
+                                     <i class="bi bi-book fst-normal"> 
+                                       Fan-Fiction Novels</i>
+                            </button>
+                        </h2>
+                        <div class="accordion-collapse collapsed"
+                             id="accordBody1"
+                             aria-labelledby="headingOne"
+                             data-bs-parent="#fanfictionAccord">
+
+                             <div class="accordion-body" style="background-color:#FFECE3;">
+                                <p><a class="accordLinks" href="fanfic_Movies.html">Movies</a></p>
+                                <p><a class="accordLinks" href="fanfic_TVshows.html">TV Shows</a></p>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-8 m-auto mt-5">
+
+                <h1 class="display-4 text-center mb-5" style="color:#4E220E;">TV SHOW FAN FICS</h1>
+
+                <div class="row"><!--1st row--> 
+                    <div class="col-6 col-sm-3">
+                        <div class="container d-lg-flex d-block justify-content-center">
+                            <img src="movie 1.png" class="img-thumbnail img-fluid w-100">
+                        </div>
+                        <div class="col">
+                            <p class="text-center m-2" style="color:#4E220E;">Same Place, Different Time</p>
+                            <p class="text-center" style="color: #E57771; font-size: 10pt;">Rizzoli & Isles TV Show (2010-2016)</p>
+                            <p class="text-center" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">coolbyrne</p>
+                            <center>
+                                <a href="#" class="rounded-0 btn-outline-light" style="color: #4E220E;">
+                                <button type="button" class="btn addtoread rounded-0 mb-3">Add to Space</button></a>
+                            </center>
+                        </div>
+                    </div>
+                     <div class="col-6 col-sm-3">
+                        <div class="container d-lg-flex d-block justify-content-center">
+                            <img src="movie 2.png" class="img-thumbnail img-fluid w-100">
+                        </div>
+                        <div class="col">
+                            <p class="text-center m-2" style="color:#4E220E;">Send Up a Signal (that everything's fine)</p>
+                            <p class="text-center" style="color: #E57771; font-size: 10pt;">Once Upon a Time TV Show (2011-2018)</p>
+                            <p class="text-center" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">coalitiongirl</p>
+                            <center>
+                                <a href="#" class="rounded-0 btn-outline-light" style="color: #4E220E;">
+                                <button type="button" class="btn addtoread rounded-0 mb-3">Add to Space</button></a>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3">
+                        <div class="container d-lg-flex d-block justify-content-center">
+                            <img src="movie 3.png" class="img-thumbnail img-fluid w-100">
+                        </div>
+                        <div class="col">
+                            <p class="text-center m-2" style="color:#4E220E;">Can't Lose You</p>
+                            <p class="text-center" style="color: #E57771; font-size: 10pt;">Grey's Anatomy TV Show (2005-present)</p>
+                            <p class="text-center" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Hime_no_Kowai_Shumi</p>
+                            <center>
+                                <a href="#" class="rounded-0 btn-outline-light" style="color: #4E220E;">
+                                <button type="button" class="btn addtoread rounded-0 mb-3">Add to Space</button></a>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3">
+                        <div class="container d-lg-flex d-block justify-content-center">
+                            <img src="movie 4.png" class="img-thumbnail img-fluid w-100">
+                        </div>
+                        <div class="col">
+                            <p class="text-center m-2" style="color:#4E220E;">stay the night</p>
+                            <p class="text-center" style="color: #E57771; font-size: 10pt;">Supergirl TV Show (2015-2021)</p>
+                            <p class="text-center" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">lynnearlington</p>
+                            <center>
+                                <a href="#" class="rounded-0 btn-outline-light" style="color: #4E220E;">
+                                <button type="button" class="btn addtoread rounded-0 mb-3">Add to Space</button></a>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row"><!--2nd row--> 
+                    <div class="col-6 col-sm-3">
+                        <div class="container d-lg-flex d-block justify-content-center">
+                            <img src="movie 5.png" class="img-thumbnail img-fluid w-100">
+                        </div>
+                        <div class="col">
+                            <p class="text-center m-2" style="color:#4E220E;">i will make you queen of everything you see</p>
+                            <p class="text-center" style="color: #E57771; font-size: 10pt;">Supergirl TV Show (2015-2021)</p>
+                            <p class="text-center" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">civilorange</p>
+                            <center>
+                                <a href="#" class="rounded-0 btn-outline-light" style="color: #4E220E;">
+                                <button type="button" class="btn addtoread rounded-0 mb-3">Add to Space</button></a>
+                            </center>
+                        </div>
+                    </div>
+                     <div class="col-6 col-sm-3">
+                        <div class="container d-lg-flex d-block justify-content-center">
+                            <img src="movie 6.png" class="img-thumbnail img-fluid w-100">
+                        </div>
+                        <div class="col">
+                            <p class="text-center m-2" style="color:#4E220E;">find beauty in a message</p>
+                            <p class="text-center" style="color: #E57771; font-size: 10pt;">Stranger Things TV Show (2016-present)</p>
+                            <p class="text-center" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">doziertozier</p>
+                            <center>
+                                <a href="#" class="rounded-0 btn-outline-light" style="color: #4E220E;">
+                                <button type="button" class="btn addtoread rounded-0 mb-3">Add to Space</button></a>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3">
+                        <div class="container d-lg-flex d-block justify-content-center">
+                            <img src="movie 7.png" class="img-thumbnail img-fluid w-100">
+                        </div>
+                        <div class="col">
+                            <p class="text-center m-2" style="color:#4E220E;">The Layers of Our Life</p>
+                            <p class="text-center" style="color: #E57771; font-size: 10pt;">Daughter from Another Mother TV Show (2021-present)</p>
+                            <p class="text-center" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">brokenmemento</p>
+                            <center>
+                                <a href="#" class="rounded-0 btn-outline-light" style="color: #4E220E;">
+                                <button type="button" class="btn addtoread rounded-0 mb-3">Add to Space</button></a>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3">
+                        <div class="container d-lg-flex d-block justify-content-center">
+                            <img src="movie 8.png" class="img-thumbnail img-fluid w-100">
+                        </div>
+                        <div class="col">
+                            <p class="text-center m-2" style="color:#4E220E;">Tiny Shoes</p>
+                            <p class="text-center" style="color: #E57771; font-size: 10pt;">The Morning Show TV Show (2019-present)</p>
+                            <p class="text-center" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">keiko48460</p>
+                            <center>
+                                <a href="#" class="rounded-0 btn-outline-light" style="color: #4E220E;">
+                                <button type="button" class="btn addtoread rounded-0 mb-3">Add to Space</button></a>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row"><!--3rd row--> 
+                    <h4 class="display-6 text-center mt-3" style="background-color: #F8E0D5; color:#4E220E;">Recommended Fan Fiction Sites:</h4>
+                    <div class="col" style="background-color: #FFECE3;">
+                        <p class="text-center m-2"><a href="https://archiveofourown.org/media/Movies/fandoms" style="color:#4E220E;">Archive of Our Own</a></p>
+                        <p class="text-center m-2"><a href="https://archiveofourown.org/media/Movies/fandoms" style="color:#4E220E;">Fanfiction.Net</a></p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <!--start of pagination-->
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination justify-content-center my-5">
+                                <li class="page-item">
+                                    <a class="page-link pages" href="#">Previous</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link pages" href="#">1</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link pages" href="#">2</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link pages" href="#">3</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link pages" href="#">4</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link pages" href="#">Next</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!--end of pagination-->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--end of accordion and books-->
+    <!--start of footer-->
+    <footer style="background-color: #F8E0D5;">
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-sm-12 col-md-3">
+                    <img src="footer-logo.png" class="my-3 mx-2" style="width: 200px;">
+                    <p class="text-justify mx-2">OpenSpace is a website where anyone part of the LGBTQIA+ community and an ally to the community, 
+                        may write, read, and discuss their favorite literature. Try and visit us to learn more.
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md mt-3">
+                    <h5 class="mx-4">Useful Links</h5>
+                    <ul style="list-style-type: none;">
+                        <li><i class="bi bi-bookmark-heart fst-normal"> <a href="indexMain_page.html" class="ftrlinks">Home</a></i></li>
+                        <li><i class="bi bi-bookmark-heart fst-normal"> <a href="about_page.html" class="ftrlinks">About Us</a></i></li>
+                        <li><i class="bi bi-bookmark-heart fst-normal"> <a href="community_page.html" class="ftrlinks">Community</a></i></li>
+                        <li><i class="bi bi-bookmark-heart fst-normal"> <a href="all-books.html" class="ftrlinks">Books</a></i></li>
+                        <li><i class="bi bi-bookmark-heart fst-normal"> <a href="siteMap_page.html" class="ftrlinks">Sitemap</a></i></li>
+                        <li><i class="bi bi-bookmark-heart fst-normal"> <a href="termsAndCon_page.html" class="ftrlinks">Terms and Condition</a></i></li>
+                        <li><i class="bi bi-bookmark-heart fst-normal"> <a href="privacyPolicy_page.html" class="ftrlinks">Privacy Policy</a></i></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-3">
+                    <h5 class="mx-4">Book Categories</h5>
+                    <ul style="list-style-type: none;">
+                        <li><i class="bi bi-bookmark-heart fst-normal"> <a href="fiction_Action.html" class="ftrlinks">Fiction Books</a></i></li>
+                        <li><i class="bi bi-bookmark-heart fst-normal"> <a href="nonfic_AutoBio.html" class="ftrlinks">Non Fiction Books</a></i></li>
+                        <li><i class="bi bi-bookmark-heart fst-normal"> <a href="fanfic_Movies.html" class="ftrlinks">Fan Fiction Books</a></i></li>
+                        <li><i class="bi bi-bookmark-heart fst-normal"> <a href="mangraph_Manga.html" class="ftrlinks">Manga & Graphic Books</a></i></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-3">
+                    <h5 class="mx-2 opacity-75 text-center">Connect with us</h5>
+                    <section class="text-center">
+                        <a href="https://www.facebook.com/" role="button" class="btn m-1" style="background-color: #3b5998; border-radius: 50%;">
+                            <i class="bi bi-facebook" style="font-size: 20pt; color: white;"></i></a>
+                        <a href="https://twitter.com/" role="button" class="btn m-1" style="background-color: #55acee; border-radius: 50%;">
+                            <i class="bi bi-twitter" style="font-size: 20pt; color: white;"></i></a>
+                        <a href="https://www.instagram.com/" role="button" class="btn m-1" style="background-color: #ac2bac; border-radius: 50%;">
+                            <i class="bi bi-instagram" style="font-size: 20pt; color: white;"></i></a>
+                        <a href="https://www.google.com/intl/fil/gmail/about/" role="button" class="btn m-1" style="background-color: #dd4b39; border-radius: 50%;">
+                            <i class="bi bi-google" style="font-size: 20pt; color: white;"></i></a>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <h5 class="text-center mt-2">Register for free <a href="signUp_page.html" class="btn-outline-light"><button type="button" class="btn signupftr mx-auto">
+            Sign Up</button></a></h5>
+        <hr class="mb-0">
+        <div class="text-center p-3" style="color: #4E220E; background-color: #ffece3;">
+            <i class="bi bi-c-circle"> 2022 All Rights Reserved: OpenSpace</i><br><br>
+            <i class="fw-light">Created by: Margus Odette H. Alovera</i>
+        </div>
+    </footer>
+    <!--end of footer-->
+</body>
+</html>

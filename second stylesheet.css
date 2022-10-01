@@ -1,0 +1,112 @@
+.nabvrButton { 
+  color: #4E220E; 
+}
+.nabvrButton:hover {
+  background-color: #4E220E;
+  color: white;
+}
+.srh{ 
+  color: #4E220E; 
+  background-color: white;
+  border: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  
+}
+.logBttn{
+  color: #4E220E; 
+}
+.logBttn:hover{
+  color: white;
+  background-color: #DFB084;
+}
+.joinBttn{
+  color: #4E220E;
+}
+.joinBttn:hover{
+  color: white;
+  background-color: #DFB084;
+}
+.btnAccord{
+  color: #4E220E;
+  background-color: #F8E0D5;
+}
+.accordLinks{
+  color: #4E220E;
+}
+.accordLinks:hover{
+  color: black;
+}
+.cardBtn{
+  color: #4E220E;
+  border-color: white;
+  font-size: 11pt;
+}
+.cardhover:hover{
+  color: black;
+  background-color: #F8E0D5;
+  opacity: 90%;
+  border-color: #4E220E;
+  box-shadow: #4E220E;
+}
+.communityBtn{
+  color: #4E220E;
+  border-color: #4E220E;
+}
+.communityBtn:hover{
+  background-color: #4E220E;
+  color: white
+}
+.pages{
+  color: #4E220E;
+  background-color: #DFB084;
+}
+.pages:hover{
+  background-color: #4E220E;
+  color: white;
+}
+.btncircle{
+  border-radius: 50%;
+}
+.btncircle:hover{
+  opacity: 50%;
+}
+.signupbtn{
+  background-color: #ffdbcd;
+  border-color: #DFB084;
+  color: #4E220E;
+}
+.signupbtn:hover{
+  background-color: #ebc098;
+  color: white;
+}
+.signinbtn{
+  background-color: #f5e7e1;
+  border-color: white;
+  color: #4E220E; 
+}
+.sitemaplinks{
+  color: #4E220E;
+}
+.sitemaplinks:hover{
+  color: #DFB084;
+}
+.ftrlinks{
+  color: #4E220E;
+}
+.ftrlinks:hover{
+  color: #DFB084;
+}
+.signupftr{
+  background-color: #e9c7a8;
+  color: #4E220E;
+}
+.signupftr:hover{
+  background-color: white;
+  color: #4E220E;
+}
+.addtoread{
+  background-color: #F8E0D5;
+  border-color: white;
+  color: #4E220E;
+}

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenSpace · Register</title>
+
+    <!--ONLINE CSS-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+		  rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+		  crossorigin="anonymous"/>
+    <link rel="stylesheet" href="second stylesheet.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+		    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+		    crossorigin="anonymous">
+    </script>
+
+    <!--ICONS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <!--ICON ON TITLE BAR-->
+	<link rel="shortcut icon" href="logo.ico" type="image/x-icon"/>
+    
+</head>
+<body style="background-color: #F6E9E4;">
+    
+    <div class="container-fluid" style="background-color:#F8E0D5;">
+        <div class="navbar navbar-expand-lg justify-content-center">
+            <a class="navbar-brand" href="indexMain_page.html">
+                <img src="header-logo.png" style="width: 200px;">
+            </a>
+        </div>
+    </div>
+    
+    <section class="mt-3">
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-md-9">
+                    <center>
+                    <img src="websitelogo.png" style="width: 35%;">
+                    </center>
+                </div>
+                <div class="col-md-8 col-lg-6 col-xl-4">
+                    <form>
+                        <div class="d-lg-flex justify-content-center">
+                            <p class="fw-normal mb-3 mt-3 mx-2 text-center">Sign up with</p>
+                            <center>
+                                <button type="button" class="btn btncircle mx-2 align" style="background-color: #CBA582;">
+                                    <a href="https://www.facebook.com/"><i class="bi bi-facebook" style="font-size: 20pt; color: white;"></i></a>
+                                </button>
+
+                                <button type="button" class="btn btncircle mx-2" style="background-color: #CBA582;">
+                                    <a href="https://twitter.com/"><i class="bi bi-twitter" style="font-size: 20pt; color: white;"></i></a>
+                                </button>
+
+                                <button type="button" class="btn btncircle mx-2" style="background-color: #CBA582;">
+                                    <a href="https://accounts.google.com/">
+                                        <i class="bi bi-google" style="font-size: 20pt; color: white;"></i></a>
+                                </button>
+                            </center>
+                        </div>
+
+                        <div class="divider d-flex justify-content-center my-4">
+                            <p class="text-center fw-bold mx mb-0">Or</p>
+                        </div>
+
+                        <!--Name Input-->
+                        <div class="mb-3">
+                            <label for="nameSignup" class="form-label">Your Name:</label>
+                            <input type="text" class="form-control" id="nameSignup" placeholder="First and Last Name" required>
+                        </div>
+
+                        <!-- Email Input -->
+                        <div class="mb-3">
+                            <label for="emailSignup" class="form-label">Email address:</label>
+                            <input type="email" class="form-control" id="emailSignup" placeholder="name@example.com" required>
+                        </div>
+
+                        <!-- Password Input -->
+                        <div class="mb-3">
+                            <label for="passwordSignup" class="form-label">Password:</label>
+                            <input type="password" class="form-control" id="passwordSignup" placeholder="At least 6 characters" required>
+                            <p><i class="bi bi-info-square fw-normal text-muted">
+                                Passwords must be at least 6 characters.</i></p>
+                        </div>
+
+                        <!-- Re-enter Password Input -->
+                        <div class="mb-3">
+                            <label for="repasswordSignup" class="form-label">Re-enter Password:</label>
+                            <input type="password" class="form-control" id="repasswordSignup" placeholder="Re-enter password" required>
+                        </div>
+
+                        <!--Button-->
+
+                        <div class="justify-content-center mt-4 pt-2 mb-5 d-flex ">
+                        <a href="#" class="w-100 signupbtn rounded-2"><!--modal here-->
+                            <button type="submit" 
+                                    class="btn signupbtn w-100"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#modalOne">
+                                    Create account
+                            </button></a>
+                            <div class="modal fade" id="modalOne" tabindex="-1">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header" style="background-color: #F8E0D5;">
+                                            <h5 class="modal-title" id="modalTitle" style="color:#4E220E;">Confirmation</h5>
+                                            <button class="btn-close"
+                                                    type="button"
+                                                    data-bs-dismiss="modal"
+                                                    aria-label="close">
+                                            </button>
+                                        </div>
+                                        <!--end of header-->
+                                        <div class="modal-body" style="background-color: #F8EDE8;">
+                                            <p>Did you read and agree in our Terms and Condition and our Privacy Policy to successfully 
+                                                create this account?
+                                            </p>
+                                        </div>
+                                        <!--end of modal body-->
+                                        <div class="modal-footer" style="background-color: #FFECE3;">
+                                            <button class="btn"
+                                                    type="button"
+                                                    style=" border-color: #DFB084; background-color: #e9c7a8; color: #4E220E;">
+                                                    Yes
+                                            </button>
+                                            <button class="btn"
+                                                    type="button"
+                                                    style="background-color: #4E220E; border: #DFB084; color: white;">
+                                                    No
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        
+                        <div>
+                            <p class="fw-bold" style="color: #4E220E;">By creating an account, you agree to the OpenSpace 
+                                <a href="termsOfUse_page.html" style="color: black;">Terms and Condition</a> 
+                                and <a href="privacyPolicy_page.html" style="color: black;">Privacy Policy.</a>
+                            </p>
+                        </div>
+                        
+                        <div class="text-center text-lg-start mt-4 mb-5 pt-2">
+                            <p class="small fw-bold mt-2 pt-1 mb-0" style="color: #4E220E;">Already have an account? 
+                                <a href="logIn_page.html" style="color: #8c6e52">Log in</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--start of footer-->
+    <footer style="background-color: #F8E0D5;">
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-sm-12 col-md-3">
+                    <img src="footer-logo.png" class="my-3 mx-2" style="width: 200px;">
+                    <p class="text-justify mx-2">OpenSpace is a website where anyone part of the LGBTQIA+ community and an ally to the community, 
+                        may write, read, and discuss their favorite literature. Try and visit us to learn more.
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md mt-3">
+                    <h5 class="mx-4">Useful Links</h5>
+                    <ul style="list-style-type: none;">
+                        <li><i class="bi bi-bookmark-heart fst-normal"> <a href="indexMain_page.html" class="ftrlinks">Home</a></i></li>
+                        <li><i class="bi bi-bookmark-heart fst-normal"> <a href="about_page.html" class="ftrlinks">About Us</a></i></li>
+                        <li><i class="bi bi-bookmark-heart fst-normal"> <a href="community_page.html" class="ftrlinks">Community</a></i></li>
+                        <li><i class="bi bi-bookmark-heart fst-normal"> <a href="all-books.html" class="ftrlinks">Books</a></i></li>
+                        <li><i class="bi bi-bookmark-heart fst-normal"> <a href="siteMap_page.html" class="ftrlinks">Sitemap</a></i></li>
+                        <li><i class="bi bi-bookmark-heart fst-normal"> <a href="termsAndCon_page.html" class="ftrlinks">Terms and Condition</a></i></li>
+                        <li><i class="bi bi-bookmark-heart fst-normal"> <a href="privacyPolicy_page.html" class="ftrlinks">Privacy Policy</a></i></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-3">
+                    <h5 class="mx-4">Book Categories</h5>
+                    <ul style="list-style-type: none;">
+                        <li><i class="bi bi-bookmark-heart fst-normal"> <a href="fiction_Action.html" class="ftrlinks">Fiction Books</a></i></li>
+                        <li><i class="bi bi-bookmark-heart fst-normal"> <a href="nonfic_AutoBio.html" class="ftrlinks">Non Fiction Books</a></i></li>
+                        <li><i class="bi bi-bookmark-heart fst-normal"> <a href="fanfic_Movies.html" class="ftrlinks">Fan Fiction Books</a></i></li>
+                        <li><i class="bi bi-bookmark-heart fst-normal"> <a href="mangraph_Manga.html" class="ftrlinks">Manga & Graphic Books</a></i></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-3">
+                    <h5 class="mx-2 opacity-75 text-center">Connect with us</h5>
+                    <section class="text-center">
+                        <a href="https://www.facebook.com/" role="button" class="btn m-1" style="background-color: #3b5998; border-radius: 50%;">
+                            <i class="bi bi-facebook" style="font-size: 20pt; color: white;"></i></a>
+                        <a href="https://twitter.com/" role="button" class="btn m-1" style="background-color: #55acee; border-radius: 50%;">
+                            <i class="bi bi-twitter" style="font-size: 20pt; color: white;"></i></a>
+                        <a href="https://www.instagram.com/" role="button" class="btn m-1" style="background-color: #ac2bac; border-radius: 50%;">
+                            <i class="bi bi-instagram" style="font-size: 20pt; color: white;"></i></a>
+                        <a href="https://www.google.com/intl/fil/gmail/about/" role="button" class="btn m-1" style="background-color: #dd4b39; border-radius: 50%;">
+                            <i class="bi bi-google" style="font-size: 20pt; color: white;"></i></a>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <h5 class="text-center mt-2">Register for free <a href="signUp_page.html" class="btn-outline-light"><button type="button" class="btn signupftr mx-aut">
+            Sign Up</button></a></h5>
+        <hr class="mb-0">
+        <div class="text-center p-3" style="color: #4E220E; background-color: #ffece3;">
+            <i class="bi bi-c-circle"> 2022 All Rights Reserved: OpenSpace</i><br><br>
+            <i class="fw-light">Created by: Margus Odette H. Alovera</i>
+        </div>
+    </footer>
+    <!--end of footer-->
+</body>
+</html>

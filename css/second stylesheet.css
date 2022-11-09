@@ -1,0 +1,187 @@
+.nabvrButton { 
+  color: #4E220E; 
+}
+.nabvrButton:hover {
+  background-color: #4E220E;
+  color: white;
+}
+.nabvrButton1 { 
+  color: #4E220E; 
+}
+.nabvrButton1:hover {
+  background-color: #DFB084;
+  color: white;
+}
+.srh{ 
+  color: #4E220E; 
+  background-color: white;
+  border: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  
+}
+.logBttn{
+  color: #4E220E; 
+}
+.logBttn:hover{
+  color: white;
+  background-color: #DFB084;
+}
+.joinBttn{
+  color: #4E220E;
+}
+.joinBttn:hover{
+  color: white;
+  background-color: #DFB084;
+}
+.btnAccord{
+  color: #4E220E;
+  background-color: #F8E0D5;
+}
+.accordLinks{
+  color: #4E220E;
+}
+.accordLinks:hover{
+  color: black;
+}
+.cardBtn{
+  color: #4E220E;
+  border-color: white;
+  font-size: 15pt;
+}
+.cardhover:hover{
+  color: black;
+  background-color: #F8E0D5;
+  opacity: 90%;
+  border-color: #4E220E;
+  box-shadow: #4E220E;
+}
+.communityBtn{
+  color: #4E220E;
+  border-color: #4E220E;
+}
+.communityBtn:hover{
+  background-color: #4E220E;
+  color: white
+}
+.pages{
+  color: #4E220E;
+  background-color: #DFB084;
+}
+.pages:hover{
+  background-color: #4E220E;
+  color: white;
+}
+.btncircle{
+  border-radius: 50%;
+}
+.btncircle:hover{
+  opacity: 50%;
+}
+.signupbtn{
+  background-color: #ffdbcd;
+  border-color: #DFB084;
+  color: #4E220E;
+}
+.signupbtn:hover{
+  background-color: #ebc098;
+  color: white;
+}
+.signinbtn{
+  background-color: #f5e7e1;
+  border-color: white;
+  color: #4E220E; 
+}
+.sitemaplinks{
+  color: #4E220E;
+}
+.sitemaplinks:hover{
+  color: #DFB084;
+}
+.ftrlinks{
+  color: #4E220E;
+}
+.ftrlinks:hover{
+  color: #DFB084;
+}
+.signupftr{
+  background-color: #e9c7a8;
+  color: #4E220E;
+}
+.signupftr:hover{
+  background-color: white;
+  color: #4E220E;
+}
+.addtoread{
+  background-color: #F8E0D5;
+  border-color: white;
+  color: #4E220E;
+}
+#profile-details{
+  width: 250px;
+  height: 900px;
+  background-color: #FAEAE2;
+}
+.book-shelf{
+  display: flex;
+  flex: 1 1 50%;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 10px 20px 10px;
+  box-sizing: border-box;
+  background-color: #FAEAE2;
+}
+.dropdown-toggle::after {
+  content: none;
+}
+.serts{
+  justify-content: end;
+}
+.editBiobtn{
+  cursor: pointer;
+}
+.work_shelf_css{
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #F8E0D5;
+  overflow-y: scroll;
+  margin-left: 0%;
+  margin-right: 0%;
+  max-height: 300px;
+  padding-bottom: 20px;
+}
+.kabuuan {
+  max-width: 1000px;
+  max-height: 2000px;
+}
+li {
+  list-style-type: none;
+}
+.my-buttons {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+  /* display: flex; */
+  justify-content: center;
+}
+.btn {
+  flex: 1 1 0px;
+}
+.button{
+  display: inline-block;
+  padding: 10px 20px;
+  color:#ffffff;
+}
+.my-buttons {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+}
+
+/* style for search function */
+
+.hidden {
+    display: none !important; 
+}
+
+

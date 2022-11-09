@@ -10,7 +10,7 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
 		  rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
 		  crossorigin="anonymous"/>
-    <link rel="stylesheet" href="second stylesheet.css">
+    <link rel="stylesheet" href="./css/second stylesheet.css">
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
 		    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
@@ -123,12 +123,19 @@
                                         <div class="modal-footer" style="background-color: #FFECE3;">
                                             <button class="btn"
                                                     type="button"
-                                                    style=" border-color: #DFB084; background-color: #e9c7a8; color: #4E220E;">
+                                                    style=" border-color: #DFB084; background-color: #e9c7a8; color: #4E220E;"
+                                                    onclick="yesSignUp()">
                                                     Yes
                                             </button>
+                                            <script>
+                                                function yesSignUp() {
+                                                    alert("You are now signed up! Welcome to OpenSpace!")
+                                                }
+                                            </script>
                                             <button class="btn"
                                                     type="button"
-                                                    style="background-color: #4E220E; border: #DFB084; color: white;">
+                                                    style="background-color: #4E220E; border: #DFB084; color: white;"
+                                                    data-bs-dismiss="modal">
                                                     No
                                             </button>
                                         </div>

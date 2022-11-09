@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+
+    <!--ONLINE CSS-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+		  rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+		  crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./css/second stylesheet.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+		    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+		    crossorigin="anonymous">
+    </script>
+    
+    <!--ICON ON TITLE BAR-->
+	<link rel="shortcut icon" href="logo.ico" type="image/x-icon"/>
+
+    <!--ICONS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+</head>
+<body style="background-color:#F8EDE8;">
+    <!--start of navbar-->
+        <div class="container-fluid" style="background-color:#F8E0D5;">
+            <div class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="indexMain_page.html">
+                    <img src="website logo.png" style="width: 170px;">
+                </a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#NavBarMenu">
+                    <span class="navbar-toggler-icon">
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="NavBarMenu">
+                    <ul class="navbar-nav text-center me-3 ms-3 my-1">
+                        <li class="nav-item">
+                            <a class="nav-link nabvrButton" href="indexMain_page.html">Home</a>
+                        </li> 
+                        <li class="nav-item">
+                            <a class="nav-link nabvrButton" href="user-mybooks.html">OpenShelf</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle nabvrButton" href="#" role="button" 
+                            data-bs-toggle="dropdown" aria-expanded="false">Book Categories</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item nabvrButton" href="all-books.html">All Books📚</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item nabvrButton" href="fiction_Action.html">Fiction Books📕</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item nabvrButton" href="nonfic_AutoBio.html">Non-Fiction Books📙</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item nabvrButton" href="fanfic_Movies.html">Fan-Fiction Books📗</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item nabvrButton" href="mangraph_Manga.html">Manga/Graphic Books📘</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nabvrButton" href="community_page.html">Community</a>
+                        </li>
+                    </ul>
+                    
+                    <form class="input-group d-lg-flex justify-content-center w-75 mx-auto srchbar" role="search">
+                        <input type="text" class="form-control border-0 rounded-0" placeholder="Books, Authors, Community, etc." aria-label="Search">
+                        <button type="text" class="srh"><i class="bi bi-search"></i></button>
+                    </form>
+
+                    <ul class="navbar-nav text-center me-3 ms-3 my-1">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle nabvrButton" href="#" role="button" 
+                            data-bs-toggle="dropdown" aria-expanded="false"><img src="notification-icon.png" style="width:35px;" class="rounded-circle"></a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <h6 class="dropdown-header">NOTIFICATIONS</h6>
+                                <a class="dropdown-item nabvrButton" href="" style="font-size: small;">View all notification</a>
+                                <li class="dropdown-divider">
+                                    <!--none-->
+                                </li>
+                                <p class="text-center">No Notification</p>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle nabvrButton" href="#" role="button" 
+                            data-bs-toggle="dropdown" aria-expanded="false"><img src="user-1.png" style="width:35px;" class="rounded-circle"></a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <h6 class="dropdown-header">USER</h6>
+                                <li>
+                                    <a class="dropdown-item nabvrButton" href="userprofile_page.html">Profile</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item nabvrButton" href="#">Friends</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item nabvrButton" href="user-mybooks.html">OpenShelf</a>
+                                </li>
+                                <li class="dropdown-divider">
+                                    <!--none-->
+                                </li>
+                                <li>
+                                    <a class="dropdown-item nabvrButton" href="#">Sign Out</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+    <!--end of navbar-->
+    <!--start of the user's profile page-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 my-3">
+            <center>
+
+                <div class="mt-3" id="showProfilePic">
+                    <img src="user-1.png" class="img-fluid img-thumbnail mt-3" style="width: 200px; height: 200px; box-shadow: 10px 10px 5px #ccc; float: right;">
+                </div>
+                <br><br>
+                <div id="profile-details" class="py-4">
+                    <div>
+                        <p class="pt-3 mt-4 text-muted" style="font-size: 8pt;"
+                           data-bs-toggle="modal"
+                           data-bs-target="#modalTwo"><u style="color: #441702;">
+                            Update Profile Picture</u></p>
+                        <div class="modal fade" id="modalTwo" tabindex="-1" style="background-color: #FFECE3;">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header" style="background-color: #F8E0D5;">
+                                        <h5 class="modal-title" id="modalTitle2" style="color:#4E220E;">
+                                        Change your Profile Picture
+                                        </h5>
+                                        <button class="btn-close"
+                                        type="button"
+                                        data-bs-dismiss="modal"
+                                        aria-label="close">
+                                        </button>
+                                    </div>
+                                    <!--end modal header-->
+                                    <div class="modal-body" style="background-color: #F8EDE8;">
+                                        <input class="form-control mt-2" type="file" id="editPic" onchange="getProfilePic();">
+                                    </div>
+                                    <!--end of modal body-->
+                                    <div class="modal-footer justify-content-center" style="background-color: #F8E0D5;">
+                                        <hr style="color: #4E220E;">
+                                        <button type="button" class="btn mx-5" style="color: white; background-color: #CBA582"
+                                                data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn mx-5"
+                                                style="color: white; background-color: #441702" 
+                                                data-bs-dismiss="modal" 
+                                                onclick="clear()">Save Changes</button>
+                                    </div>
+                                    <!--end of modal footer-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#"><p class="text-muted" style="font-size: 8pt;"><u>
+                        
+                    </u></p></a>
+                    <p class="mt-3" id="author_user">Destine Aphrodite</p>
+                    <p class="mt-3" style="font-size: 7pt;">@kindledestineaphrodite</p>
+                    <br><!--Space-->
+                    <p class="mt-3" id="bioDisplay">Care less, smile more.</p>
+                    <div> <!--adding modal-->
+                        <p class="mt-3 text-muted editBiobtn text-center" style="font-size: 9pt;"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modalOne"><u style="color: #441702;">Edit your bio</u>
+                        </p>
+                        <div class="modal fade" id="modalOne" tabindex="-1" style="background-color: #FFECE3;">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header" style="background-color: #F8E0D5;">
+                                        <h5 class="modal-title" id="modalTitle1" style="color:#4E220E;">
+                                        Edit your Bio
+                                        </h5>
+                                        <button class="btn-close"
+                                        type="button"
+                                        data-bs-dismiss="modal"
+                                        aria-label="close">
+                                        </button>
+                                    </div>
+                                    <!--end modal header-->
+                                    <div class="modal-body" style="background-color: #F8EDE8;">
+                                        <textarea class="form-control mt-2" id="editBio" placeholder="Sprinkling kindness everywhere I go." rows="5"></textarea>
+                                    </div>
+                                    <!--end of modal body-->
+                                    <div class="modal-footer justify-content-center" style="background-color: #F8E0D5;">
+                                        <hr style="color: #4E220E;">
+                                        <button type="button" class="btn mx-5" style="color: white; background-color: #CBA582"
+                                                data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn mx-5"
+                                                style="color: white; background-color: #441702" 
+                                                data-bs-dismiss="modal" 
+                                                onclick="editBioFunction();">Save Changes</button>
+                                    </div>
+                                    <!--end of modal footer-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end of modal-->
+                    <div class="row ps-3 px-4 my-4">
+                        <p class="text-center" style="color: #441702;">Friends</p>
+                        <div class="col-md-4" style="font-size: x-small;">
+                            <img src="user-2.png" style="width: 60px;" class="border border-white border-2">
+                            @fairytabitha
+                        </div>
+                        <div class="col-md-4" style="font-size: x-small;">
+                            <img src="user-3.png" style="width: 60px; position: inherit;" class="border border-white border-2">
+                            @nixxistories
+                        </div>
+                        <div class="col-md-4" style="font-size: x-small;">
+                            <img src="user-4.png" style="width: 60px;" class="border border-white border-2">
+                            @charmsregina
+                        </div>
+                    </div>
+                    <div class="row ps-3 px-4">
+                        <div class="col-md-4" style="font-size: x-small;">
+                            <img src="user-5.png" style="width: 60px;" class="border border-white border-2">
+                            @harrywizard
+                        </div>
+                        <div class="col-md-4" style="font-size: x-small;">
+                            <img src="user-6.png" style="width: 60px; position: inherit;" class="border border-white border-2">
+                            @toffeeniccolo
+                        </div>
+                        <div class="col-md-4" style="font-size: x-small;" class="border border-white border-2">
+                            <img src="user-7.png" style="width: 60px;" class="border border-white border-2">
+                            @M.hannah
+                        </div>
+                    </div>
+                    <a href="" style="color: #441702;"><p class="text-end px-2 my-2" style="font-size: small;">See more friends..</p></a>
+                </div>
+
+            </center>
+            </div>
+
+            <div class="col-md-8 kabuuan my-3">
+                <!-- List of the Books in the user's Library -->
+                <h6 class="text-start" style="color: #441702;">USER'S SPACE SHELF</h6>
+                <hr style="color: #441702;">
+                <div id="" class="book-shelf text-center py-4">
+                    <a href="user-mybooks.html" style="color: #441702;">0 currently-books</a>
+                    <!-- List of books here (JS) -->
+                </div>
+                <a href="user-mybooks.html" style="color: #441702;"><p class="text-end mt-3" style="font-size: small;">More from your Library..</p></a>
+
+                <!-- List of the user's published books -->
+                <h6 class="text-start"  style="color: #441702;">USER'S PUBLISHED WORKS</h6>
+                <hr>
+                <div id="work-shelf" class="text-start">
+                    <div class="row">
+                       <div class="col-md-12">
+                            <div class="w-100" style="background-color:#F8E0D5;" 
+                                 id="addWork" 
+                                 data-bs-toggle="modal" 
+                                 data-bs-target="#form">
+                                <button type="button" class="btn btn-lg">
+                                    <i class="bi bi-journal-plus fst-normal" style="color: #441702;"> <span>Add Works</span></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- List of books here (JS) -->
+                    <!-- Modal -->
+                    <form class="modal fade" id="form" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true" style="background-color: #FFECE3;">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header" style="background-color: #F8E0D5;">
+                                    <h1 class="modal-title fs-5" id="modalLabel" style="color:#4E220E;">Add Publish Work</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body" style="background-color: #F8EDE8;">
+                                    <p style="font-family:Arial, Helvetica, sans-serif; color: #A88463;"><b>Book Cover</b>:</p>
+                                    <input class="form-control" type="file" id="coverUpload" onchange="getBookCover();">
+                                    <br><br>
+                                    <div id="showImage"></div>
+                                    <br>
+                                    <p style="font-family:Arial, Helvetica, sans-serif; color: #A88463;"><b>Book Title:</b></p>
+                                    <input class="form-control" type="text" id="title-work">
+                                    <br>
+                                    <p style="font-family:Arial, Helvetica, sans-serif; color: #A88463;"><b>Book File:</b></p>
+                                    <input class="form-control" type="file" id="epubUpload" onchange="docxFile();">
+                                    <div id="showEpub" style="display: none;"></div>
+                                    <div id="alert_form"></div>
+                                    <br>
+                                    <div class="mt-2">
+                                        <span style="font-family:Arial, Helvetica, sans-serif; color: #A88463;"><b>Date Added: </b></span>
+                                        <span id="date_added"></span>
+                                    </div>
+                                    <br>
+                                    <p style="font-family:Arial, Helvetica, sans-serif; color: #A88463;"><b>Book Description:</b></p>
+                                    <textarea name="" class="form-control" id="book-description" cols="30" rows="5"></textarea>
+                                </div>
+                                <div class="modal-footer" style="background-color: #F8E0D5;">
+                                    <hr style="color: #4E220E;">
+                                    <button type="button" class="btn" data-bs-dismiss="modal" 
+                                            style="color: white; background-color: #CBA582;">Close</button>
+                                    <button type="submit" id="add" class="btn" onclick="getDetails()" 
+                                            style="color: white; background-color: #441702">Add Book</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    
+                <div class="row work_shelf_css">
+                    <div id="works_in_shelf">
+                        <div class="row mt-3">
+                            <div class="col-md-2">
+                                <div>
+                                    <img src="user-work 1.png" style='width:100px;' class='img-thumbnail'>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="mt-2">
+                                    <b style="font-family:Arial, Helvetica, sans-serif; color: #441702;">Title:</b> Two Worlds Collide
+                                </div>
+                                <div class="mt-2">
+                                    <b style="font-family:Arial, Helvetica, sans-serif; color: #441702;">Author:</b> Destine Aphrodite
+                                </div>
+                                <div class="mt-2">
+                                    <b style="font-family:Arial, Helvetica, sans-serif; color: #441702;">Date Added: </b><span>2020-11-27</span>
+                                </div>
+                                <div class="mt-2" style="font-size: medium; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
+                                    It's a comedy of manners story about commitment. It kicks off at a botanical garden with someone walking into a lamp post.
+                                    A widow who is grieving of losing a spouse, and the story takes place in England in 1994 and England in 2022.
+                                </div>
+                                <div class="mt-2">
+                                    <hr style="color: #441702;">
+                                    <center>
+                                    <a href="Two-Worlds-Collide.epub" style="color: #441702;" id="dl_btn"><i class="bi bi-file-earmark-arrow-down fst-normal">Download</i></a>
+                                    <i class="bi bi-three-dots-vertical"></i>
+                                    <i class="bi bi-trash2 fst-normal" style="color: #A88463;" onclick="deleteWork(this)">Remove</i>
+                                    </center>
+                                    <hr style="color: #441702;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- User's updates -->
+                <br>
+                <h6 class="text-start" style="color: #441702;">USER'S RECENT UPDATES</h6>
+                <hr style="color: #441702;">
+            </div>
+        </div>
+    </div>
+    <!--end of the user's profile page-->
+    <!--start of footer-->
+    <footer style="background-color: #F8E0D5;">
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-sm-12 col-md-3">
+                    <img src="footer-logo.png" class="my-3 mx-2" style="width: 170px;">
+                    <p class="text-justify mx-2">OpenSpace is a website where anyone part of the LGBTQIA+ community and an ally to the community, 
+                        may write, read, and discuss their favorite literature. Try and visit us to learn more.
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md mt-3">
+                    <h5 class="mx-4">Useful Links</h5>
+                    <ul style="list-style-type: none;">
+                        <li><i class="bi bi-bookmark-heart fst-normal"> <a href="indexMain_page.html" class="ftrlinks">Home</a></i></li>
+                        <li><i class="bi bi-bookmark-heart fst-normal"> <a href="about_page.html" class="ftrlinks">About Us</a></i></li>
+                        <li><i class="bi bi-bookmark-heart fst-normal"> <a href="community_page.html" class="ftrlinks">Community</a></i></li>
+                        <li><i class="bi bi-bookmark-heart fst-normal"> <a href="all-books.html" class="ftrlinks">Books</a></i></li>
+                        <li><i class="bi bi-bookmark-heart fst-normal"> <a href="siteMap_page.html" class="ftrlinks">Sitemap</a></i></li>
+                        <li><i class="bi bi-bookmark-heart fst-normal"> <a href="termsAndCon_page.html" class="ftrlinks">Terms and Condition</a></i></li>
+                        <li><i class="bi bi-bookmark-heart fst-normal"> <a href="privacyPolicy_page.html" class="ftrlinks">Privacy Policy</a></i></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-3">
+                    <h5 class="mx-4">Book Categories</h5>
+                    <ul style="list-style-type: none;">
+                        <li><i class="bi bi-bookmark-heart fst-normal"> <a href="fiction_Action.html" class="ftrlinks">Fiction Books</a></i></li>
+                        <li><i class="bi bi-bookmark-heart fst-normal"> <a href="nonfic_AutoBio.html" class="ftrlinks">Non Fiction Books</a></i></li>
+                        <li><i class="bi bi-bookmark-heart fst-normal"> <a href="fanfic_Movies.html" class="ftrlinks">Fan Fiction Books</a></i></li>
+                        <li><i class="bi bi-bookmark-heart fst-normal"> <a href="mangraph_Manga.html" class="ftrlinks">Manga & Graphic Books</a></i></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-3">
+                    <h5 class="mx-2 opacity-75 text-center">Connect with us</h5>
+                    <section class="text-center">
+                        <a href="https://www.facebook.com/" role="button" class="btn m-1" style="background-color: #3b5998; border-radius: 50%;">
+                            <i class="bi bi-facebook" style="font-size: 20pt; color: white;"></i></a>
+                        <a href="https://twitter.com/" role="button" class="btn m-1" style="background-color: #55acee; border-radius: 50%;">
+                            <i class="bi bi-twitter" style="font-size: 20pt; color: white;"></i></a>
+                        <a href="https://www.instagram.com/" role="button" class="btn m-1" style="background-color: #ac2bac; border-radius: 50%;">
+                            <i class="bi bi-instagram" style="font-size: 20pt; color: white;"></i></a>
+                        <a href="https://www.google.com/intl/fil/gmail/about/" role="button" class="btn m-1" style="background-color: #dd4b39; border-radius: 50%;">
+                            <i class="bi bi-google" style="font-size: 20pt; color: white;"></i></a>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <h5 class="text-center mt-2">Register for free <a href="signUp_page.html" class="btn-outline-light"><button type="button" class="btn signupftr mx-auto">
+            Sign Up</button></a></h5>
+        <hr class="mb-0">
+        <div class="text-center p-3" style="color: #4E220E; background-color: #ffece3;">
+            <i class="bi bi-c-circle"> 2022 All Rights Reserved: OpenSpace</i><br><br>
+            <i class="fw-light">Created by: Margus Odette H. Alovera</i>
+        </div>
+    </footer>
+    <!--end of footer-->
+</body>
+<script src="./js/user-myworks.js"></script>
+</html>

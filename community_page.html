@@ -10,7 +10,7 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
 		  rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
 		  crossorigin="anonymous">
-    <link rel="stylesheet" href="second stylesheet.css">
+    <link rel="stylesheet" href="./css/second stylesheet.css">
 		
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
 		    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
@@ -123,7 +123,7 @@
                                             <hr style="color: #4E220E;">
                                             <div class="text-center text-lg-center mt-auto pt-2">
                                                 <!--log in button-->        
-                                                <a href="" class="btn-outline-light text-center" style="color: #4E220E;"><button type="submit" class="btn signinbtn w-25 mb-3">
+                                                <a href="userprofile_page.html" class="btn-outline-light text-center" style="color: #4E220E;"><button type="submit" class="btn signinbtn w-25 mb-3">
                                                     Login</button></a>
                                                 <!--log in button--> 
                                                 <p class="small fw-bold mb-0 text-lg-center mb-2" style="color:#4E220E;">Don't have an account? 
@@ -173,15 +173,15 @@
                     even leave a message to your favorite author! This community is <b>Open</b> to prioritize your comfort <b>Space</b>.🤝🏻
                 </p>
                 <hr style="color: #441702;">
-                <form class="mt-4 mx-5" action="">
+                <form class="mt-4 mx-5" id="form">
                     <div class="row my-3">
                         <div class="col">
                             <label for="name">Name:</label>
-                            <input type="text" class="form-control mt-2" id="name" placeholder="or Nickname">
+                            <input type="text" class="form-control mt-2" id="name" placeholder="or Nickname" required>
                         </div>
                         <div class="col">
                             <label for="username">Username:</label>
-                            <input type="text" class="form-control mt-2" id="name" placeholder="" required>
+                            <input type="text" class="form-control mt-2" id="username" placeholder="">
                         </div>
                     </div>
                     <div class="form-group my-3">
@@ -198,16 +198,56 @@
                             <option>Author</option>
                         </select>
                     </div>
+                    <div id="alert"></div>
                     <div class="form-group my-3">
                         <label for="openSpace">Share here in the <b>Open Space</b> your thoughts and comments🤝🏻:</label>
                         <textarea class="form-control mt-2" id="openSpace" rows="5"></textarea>
                     </div>
                     <div class="justify-content-start mt-4 pt-2 mb-5 d-flex">
-                        <a href="" class="communityBtn w-100"><button type="submit" class="btn communityBtn w-100 rounded-0">Submit</button></a>
+                        <a href="#" class="communityBtn w-100">
+                            <button type="submit" id="add_comment" 
+                                    class="btn communityBtn w-100 rounded-0">
+                                    Submit
+                            </button>
+                        </a>
                     </div>
                 </form>
             </div>
         </div>
+        <div class="row" id="comments" style="background-color: #F8E0D5;">
+            <!-- <div  class="" > -->
+                <h5 class="display-6 text-center mt-3 py-3">The Community Space🤝🏻🏳️‍🌈</h5>
+                <hr>
+                <div class="col-md-6">
+                    <p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana; font-size: x-large; color: #441702;">
+                        Destine Aphrodite</p>
+                    <p class="fst-italic" style="font-size: small;">@kindledestineaphrodite</p>
+                    <p class="fw-bold" style="color: #441702;">Member of OpenSpace</p>
+                    <p>Love doesn't just sit there, like a stone, it has to be made, like bread; remade 
+                        all the time, made new.</p>
+                    <span><i class="bi bi-trash2" 
+                       onclick="deleteComment(this);">Remove</i></span>
+                    <hr>
+                </div>
+                <div class="col-md-6">
+                    <p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana; font-size: x-large; color: #441702;">
+                        Polly</p>
+                    <p class="fst-italic" style="font-size: small;">@polliana_helen</p>
+                    <p class="fw-bold" style="color: #441702;">Visitor</p>
+                    <p>I always visit here in OpenSpace, finding lgbt books is now not a hassle anymore!</p>
+                    <span><i class="bi bi-trash2" 
+                       onclick="deleteComment(this);">Remove</i></span>
+                    <hr>
+                </div>
+            <!-- </div> -->
+        </div>
+        <!-- <span><i class="bi bi-pencil-square" 
+            data-bs-toggle="modal" 
+            data-bs-target="#form"
+            onclick="editComment(this);"
+            id="edit"
+            >Edit</i>
+        </span> -->
     </div>
     <!--end of form for the community -->
     <br><br>
@@ -269,4 +309,5 @@
     </footer>
     <!--end of footer-->
 </body>
+<script src="./js/community_function.js"></script>
 </html>

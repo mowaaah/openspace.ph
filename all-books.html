@@ -10,7 +10,8 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
 		  rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
 		  crossorigin="anonymous">
-    <link rel="stylesheet" href="second stylesheet.css">
+    <link rel="stylesheet" href="./css/second stylesheet.css">
+    
 		
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
 		    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
@@ -70,7 +71,7 @@
                     </ul>
                     
                     <form class="input-group d-lg-flex w-75 justify-content-center mx-auto srchbar" role="search">
-                        <input type="text" class="form-control border-0 rounded-0" placeholder="Books, Authors, Community, etc." aria-label="Search">
+                        <input type="text" class="form-control border-0 rounded-0" placeholder="Books, Authors, Community, etc." aria-label="Search" id="allSearch">
                         <button type="text" class="srh"><i class="bi bi-search"></i></button>
                     </form>
 
@@ -123,7 +124,7 @@
                                             <hr style="color: #4E220E;">
                                             <div class="text-center text-lg-center mt-auto pt-2">
                                                 <!--log in button-->        
-                                                <a href="" class="btn-outline-light text-center" style="color: #4E220E;"><button type="submit" class="btn signinbtn w-25 mb-3">
+                                                <a href="userprofile_page.html" class="btn-outline-light text-center" style="color: #4E220E;"><button type="submit" class="btn signinbtn w-25 mb-3">
                                                     Login</button></a>
                                                 <!--log in button--> 
                                                 <p class="small fw-bold mb-0 text-lg-center mb-2" style="color:#4E220E;">Don't have an account? 
@@ -164,420 +165,637 @@
     <div class="container-fluid">
         <div class="row">
             
-            <div class="col-md-12 m-auto mt-5">
+            <div class="col-md-12 m-auto my-4 add_books">
 
                 <h1 class="display-4 text-center mb-5 mt-2" style="color:#4E220E;">ALL BOOKS</h1>
 
-                <div class="row"><!--1st row--> 
-                    <div class="col-6 col-sm">
-                        <div class="container d-lg-flex d-block justify-content-center">
-                            <img src="action 1.jpg" class="img-thumbnail img-fluid w-100">
+                <div class="row"><!--1st row-->
+
+                    <div class="book col-6 col-md-4 col-lg-2 d-sm-block">
+                        <div class="col container d-lg-flex flex-column d-block justify-content-center">
+                           <img src="action 1.jpg" class="img-thumbnail img-fluid w-100" id="cover1"> 
                         </div>
-                        <div class="col">
-                            <p class="text-center m-2" style="color:#4E220E;">The Two Gentlemen of Altona (Playing the Fool, #1)</p>
-                            <p class="text-center" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Lisa Henry</p>
+                        <div class="col bookDisplay">
+                            <hr style="color:#4E220E;">
                             <center>
-                                <a href="#" class="rounded-0 btn-outline-light" style="color: #4E220E;">
-                                <button type="button" class="btn addtoread rounded-0 mb-3">Add to Space</button></a>
+                                <button type="button" 
+                                        class="btn rounded-0 mt-1 mb-1 addtoSpace" 
+                                        onclick="change201()" 
+                                        id="btn_change201"
+                                        style="background-color: #F8E0D5; border-color: white; color: #4E220E;">
+                                        Add to Space</button>
                             </center>
+                            <hr style="color:#4E220E;">
+                            <p class="text-center m-2 bookTitleClass" style="color:#4E220E;" id="title1">The Two Gentlemen of Altona (Playing the Fool, #1)</p>
+                            <p class="text-center mb-5" style="color: #4E220E; opacity: 0.8; font-size: 11pt;" id="author1">Lisa Henry</p>
                         </div>
                     </div>
-                     <div class="col-6 col-sm">
-                        <div class="container d-lg-flex d-block justify-content-center">
+
+                    <div class="book col-6 col-md-4 col-lg-2 d-sm-block">
+                        <div class="col container d-lg-flex flex-column d-block justify-content-center">
                             <img src="action 2.jpg" class="img-thumbnail img-fluid w-100">
-                        </div>
+                        </div> 
                         <div class="col">
-                            <p class="text-center  m-2" style="color:#4E220E;">The Royal Street Heist (Bissonnet & Cruz Investigations, #1)</p>
-                            <p class="text-center" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Scotty Cade</p>
+                            <hr style="color:#4E220E;">
                             <center>
-                                <a href="#" class="rounded-0 btn-outline-light" style="color: #4E220E;">
-                                <button type="button" class="btn addtoread rounded-0 mb-3">Add to Space</button></a>
+                                <button type="button" 
+                                        class="btn rounded-0 mt-1 mb-1" 
+                                        onclick="change202()" 
+                                        id="btn_change202"
+                                        style="background-color: #F8E0D5; border-color: white; color: #4E220E;">
+                                        Add to Space</button>
                             </center>
+                            <hr style="color:#4E220E;">
+                            <p class="text-center m-2" style="color:#4E220E;">The Royal Street Heist (Bissonnet & Cruz Investigations, #1)</p>
+                            <p class="text-center mb-5" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Scotty Cade</p>
                         </div>
                     </div>
-                    <div class="col-6 col-sm">
-                        <div class="container d-lg-flex d-block justify-content-center">
+
+                    <div class="book col-6 col-md-4 col-lg-2 d-sm-block">
+                        <div class="col container d-lg-flex flex-column d-block justify-content-center">
                             <img src="action 3.jpg" class="img-thumbnail img-fluid w-100">
                         </div>
                         <div class="col">
+                            <hr style="color:#4E220E;">
+                            <center>
+                                <button type="button" 
+                                        class="btn rounded-0 mt-1 mb-1" 
+                                        onclick="change203()" 
+                                        id="btn_change203"
+                                        style="background-color: #F8E0D5; border-color: white; color: #4E220E;">
+                                        Add to Space</button>
+                            </center>
+                            <hr style="color:#4E220E;">
                             <p class="text-center m-2" style="color:#4E220E;"><b>The Barrens:</b> A Novel of Love and Death</p>
-                            <p class="text-center" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Ellie Johnson and Kurt Johnson</p>
-                            <center>
-                                <a href="#" class="rounded-0 btn-outline-light" style="color: #4E220E;">
-                                <button type="button" class="btn addtoread rounded-0 mb-3">Add to Space</button></a>
-                            </center>
+                            <p class="text-center mb-5" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Ellie Johnson and Kurt Johnson</p>
                         </div>
                     </div>
-                    <div class="col-6 col-sm">
-                        <div class="container d-lg-flex d-block justify-content-center">
-                            <img src="action 4.jpg" class="img-thumbnail img-fluid w-100">
+
+                    <div class="book col-6 col-md-4 col-lg-2 d-sm-block">
+                        <div class="col container d-lg-flex flex-column d-block justify-content-center">
+                            <img src="action 4.jpg" class="img-thumbnail img-fluid w-100">    
                         </div>
                         <div class="col">
+                            <hr style="color:#4E220E;">
+                            <center>
+                                <button type="button" 
+                                        class="btn rounded-0 mt-1 mb-1" 
+                                        onclick="change204()" 
+                                        id="btn_change204"
+                                        style="background-color: #F8E0D5; border-color: white; color: #4E220E;">
+                                        Add to Space</button>
+                            </center>
+                            <hr style="color:#4E220E;">
                             <p class="text-center m-2" style="color:#4E220E;">Where Death Meets the Devil</p>
-                            <p class="text-center" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">LJ Hayward</p>
-                            <center>
-                                <a href="#" class="rounded-0 btn-outline-light" style="color: #4E220E;">
-                                <button type="button" class="btn addtoread rounded-0 mb-3">Add to Space</button></a>
-                            </center>
+                            <p class="text-center mb-5" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">LJ Hayward</p>
                         </div>
                     </div>
-                    <div class="col-6 col-sm">
-                        <div class="container d-lg-flex d-block justify-content-center">
-                        <img src="action 5.jpg" class="img-thumbnail img-fluid w-100">
+
+                    <div class="book col-6 col-md-4 col-lg-2 d-sm-block">
+                        <div class="col container d-lg-flex flex-column d-block justify-content-center">
+                            <img src="action 5.jpg" class="img-thumbnail img-fluid w-100">
                         </div>
                         <div class="col">
-                            <p class="text-center m-2" style="color:#4E220E;">Riding the Storm (Daredevils Rescue Service Book 1)</p>
-                            <p class="text-center" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Erin Wade</p>
+                            <hr style="color:#4E220E;">
                             <center>
-                                <a href="#" class="rounded-0 btn-outline-light" style="color: #4E220E;">
-                                <button type="button" class="btn addtoread rounded-0 mb-3">Add to Space</button></a>
+                                <button type="button" 
+                                        class="btn rounded-0 mt-1 mb-1" 
+                                        onclick="change205()" 
+                                        id="btn_change205"
+                                        style="background-color: #F8E0D5; border-color: white; color: #4E220E;">
+                                        Add to Space</button>
                             </center>
+                            <hr style="color:#4E220E;">
+                            <p class="text-center m-2" style="color:#4E220E;">Riding the Storm (Daredevils Rescue Service Book 1)</p>
+                            <p class="text-center mb-5" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Erin Wade</p>
                         </div>
                     </div>
-                     <div class="col-6 col-sm">
-                        <div class="container d-lg-flex d-block justify-content-center">
+
+                    <div class="book col-6 col-md-4 col-lg-2 d-sm-block">
+                        <div class="col container d-lg-flex flex-column d-block justify-content-center">
                             <img src="action 6.jpg" class="img-thumbnail img-fluid w-100">
                         </div>
                         <div class="col">
-                            <p class="text-center m-2" style="color:#4E220E;">The Lady Adventurers Club</p>
-                            <p class="text-center" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Karen Frost</p>
+                            <hr style="color:#4E220E;">
                             <center>
-                                <a href="#" class="rounded-0 btn-outline-light" style="color: #4E220E;">
-                                <button type="button" class="btn addtoread rounded-0 mb-3">Add to Space</button></a>
+                                <button type="button" 
+                                        class="btn rounded-0 mt-1 mb-1" 
+                                        onclick="change206()" 
+                                        id="btn_change206"
+                                        style="background-color: #F8E0D5; border-color: white; color: #4E220E;">
+                                        Add to Space</button>
                             </center>
+                            <hr style="color:#4E220E;">
+                            <p class="text-center m-2" style="color:#4E220E;">The Lady Adventurers Club</p>
+                            <p class="text-center mb-5" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Karen Frost</p>
                         </div>
                     </div>
+
                 </div>
-                    
 
                 <div class="row"><!--2nd row-->
-                    <div class="col-6 col-sm">
+
+                    <div class="book col-6 col-md-4 col-lg-2 d-sm-block">
                         <div class="container d-lg-flex d-block justify-content-center">
-                            <img src="action 7.jpg" class="img-thumbnail img-fluid w-100">
+                            <img src="action 7.jpg" class="img-thumbnail img-fluid">
                         </div>
                         <div class="col">
+                            <hr style="color:#4E220E;">
+                            <center>
+                                <button type="button" 
+                                        class="btn rounded-0 mt-1 mb-1" 
+                                        onclick="change207()" 
+                                        id="btn_change207"
+                                        style="background-color: #F8E0D5; border-color: white; color: #4E220E;">
+                                        Add to Space</button>
+                            </center>
+                            <hr style="color:#4E220E;">
                             <p class="text-center m-2" style="color:#4E220E;">Wasteland</p>
-                            <p class="text-center" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Kristin Keppler and Allisa Bahney</p>
-                            <center>
-                                <a href="#" class="rounded-0 btn-outline-light" style="color: #4E220E;">
-                                <button type="button" class="btn addtoread rounded-0 mb-3">Add to Space</button></a>
-                            </center>
+                            <p class="text-center mb-5" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Kristin Keppler and Allisa Bahney</p>
                         </div>
                     </div>
-                    <div class="col-6 col-sm">
+
+                    <div class="book col-6 col-md-4 col-lg-2 d-sm-block">
                         <div class="container d-lg-flex d-block justify-content-center">
-                            <img src="action 8.jpg" class="img-thumbnail img-fluid w-100">
+                            <img src="action 8.jpg" class="img-thumbnail img-fluid">
                         </div>
                         <div class="col">
+                            <hr style="color:#4E220E;">
+                            <center>
+                                <button type="button" 
+                                        class="btn rounded-0 mt-1 mb-1" 
+                                        onclick="change208()" 
+                                        id="btn_change208"
+                                        style="background-color: #F8E0D5; border-color: white; color: #4E220E;">
+                                        Add to Space</button>
+                            </center>
+                            <hr style="color:#4E220E;">
                             <p class="text-center m-2" style="color:#4E220E;">Now Will Machines Hollow the Beast</p>
-                            <p class="text-center" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Benjanun Sriduangkaew</p>
-                            <center>
-                                <a href="#" class="rounded-0 btn-outline-light" style="color: #4E220E;">
-                                <button type="button" class="btn addtoread rounded-0 mb-3">Add to Space</button></a>
-                            </center>
+                            <p class="text-center mb-5" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Benjanun Sriduangkaew</p>
                         </div>
                     </div>
-                    <div class="col-6 col-sm">
+
+                    <div class="book col-6 col-md-4 col-lg-2 d-sm-block">
                         <div class="container d-lg-flex d-block justify-content-center">
-                            <img src="action 9.jpg" class="img-thumbnail img-fluid w-100">
+                            <img src="action 9.jpg" class="img-thumbnail img-fluid">
                         </div>
                         <div class="col">
+                            <hr style="color:#4E220E;">
+                            <center>
+                                <button type="button" 
+                                        class="btn rounded-0 mt-1 mb-1" 
+                                        onclick="change209()" 
+                                        id="btn_change209"
+                                        style="background-color: #F8E0D5; border-color: white; color: #4E220E;">
+                                        Add to Space</button>
+                            </center>
+                            <hr style="color:#4E220E;">
                             <p class="text-center m-2" style="color:#4E220E;">A Ferry of Bones & Gold (Soulbound, #1)</p>
-                            <p class="text-center" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Hailey Turner</p>
-                            <center>
-                                <a href="#" class="rounded-0 btn-outline-light" style="color: #4E220E;">
-                                <button type="button" class="btn addtoread rounded-0 mb-3">Add to Space</button></a>
-                            </center>
+                            <p class="text-center mb-5" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Hailey Turner</p>
                         </div>
                     </div>
-                     <div class="col-6 col-sm">
+
+                    <div class="book col-6 col-md-4 col-lg-2 d-sm-block">
                         <div class="container d-lg-flex d-block justify-content-center">
-                            <img src="action 10.jpg" class="img-thumbnail img-fluid w-100">
+                            <img src="action 10.jpg" class="img-thumbnail img-fluid">
                         </div>
                         <div class="col">
+                            <hr style="color:#4E220E;">
+                            <center>
+                                <button type="button" 
+                                        class="btn rounded-0 mt-1 mb-1" 
+                                        onclick="change210()" 
+                                        id="btn_change210"
+                                        style="background-color: #F8E0D5; border-color: white; color: #4E220E;">
+                                        Add to Space</button>
+                            </center>
+                            <hr style="color:#4E220E;">
                             <p class="text-center m-2" style="color:#4E220E;">The Last Sun</p>
-                            <p class="text-center" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">K. D. Edwards</p>
-                            <center>
-                                <a href="#" class="rounded-0 btn-outline-light" style="color: #4E220E;">
-                                <button type="button" class="btn addtoread rounded-0 mb-3">Add to Space</button></a>
-                            </center>
+                            <p class="text-center mb-5" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">K. D. Edwards</p>
                         </div>
                     </div>
-                    <div class="col-6 col-sm">
+
+                    <div class="book col-6 col-md-4 col-lg-2 d-sm-block">
                         <div class="container d-lg-flex d-block justify-content-center">
-                            <img src="action 11.jpg" class="img-thumbnail img-fluid w-100">
+                            <img src="action 11.jpg" class="img-thumbnail img-fluid">
                         </div>
                         <div class="col">
+                            <hr style="color:#4E220E;">
+                            <center>
+                                <button type="button" 
+                                        class="btn rounded-0 mt-1 mb-1" 
+                                        onclick="change211()" 
+                                        id="btn_change211"
+                                        style="background-color: #F8E0D5; border-color: white; color: #4E220E;">
+                                        Add to Space</button>
+                            </center>
+                            <hr style="color:#4E220E;">
                             <p class="text-center m-2" style="color:#4E220E;">Crash & Burn (Cut & Run, #9)</p>
-                            <p class="text-center" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Abigail Roux</p>
-                            <center>
-                                <a href="#" class="rounded-0 btn-outline-light" style="color: #4E220E;">
-                                <button type="button" class="btn addtoread rounded-0 mb-3">Add to Space</button></a>
-                            </center>
+                            <p class="text-center mb-5" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Abigail Roux</p>
                         </div>
                     </div>
-                    <div class="col-6 col-sm">
+
+                    <div class="book col-6 col-md-4 col-lg-2 d-sm-block">
                         <div class="container d-lg-flex d-block justify-content-center">
-                            <img src="action 12.jpg" class="img-thumbnail img-fluid w-100">
+                            <img src="action 12.jpg" class="img-thumbnail img-fluid">
                         </div>
                         <div class="col">
+                            <hr style="color:#4E220E;">
+                            <center>
+                                <button type="button" 
+                                        class="btn rounded-0 mt-1 mb-1" 
+                                        onclick="change212()" 
+                                        id="btn_change212"
+                                        style="background-color: #F8E0D5; border-color: white; color: #4E220E;">
+                                        Add to Space</button>
+                            </center>
+                            <hr style="color:#4E220E;">
                             <p class="text-center m-2" style="color:#4E220E;">All That's Left in the World</p>
-                            <p class="text-center" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Erik J. Brown</p>
-                            <center>
-                                <a href="#" class="rounded-0 btn-outline-light" style="color: #4E220E;">
-                                <button type="button" class="btn addtoread rounded-0 mb-3">Add to Space</button></a>
-                            </center>
+                            <p class="text-center mb-5" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Erik J. Brown</p>
                         </div>
                     </div>
+
                 </div>
+
                 <div class="row"><!--3rd row--> 
-                    <div class="col-6 col-sm">
+
+                    <div class="book col-6 col-md-4 col-lg-2 d-sm-block">
                         <div class="container d-lg-flex d-block justify-content-center">
-                            <img src="adventure 1.jpg" class="img-thumbnail img-fluid w-100">
+                            <img src="adventure 1.jpg" class="img-thumbnail img-fluid">
                         </div>
                         <div class="col">
+                            <hr style="color:#4E220E;">
+                            <center>
+                                <button type="button" 
+                                        class="btn rounded-0 mt-1 mb-1" 
+                                        onclick="change213()" 
+                                        id="btn_change213"
+                                        style="background-color: #F8E0D5; border-color: white; color: #4E220E;">
+                                        Add to Space</button>
+                            </center>
+                            <hr style="color:#4E220E;">
                             <p class="text-center m-2" style="color:#4E220E;">The City of Dusk</p>
-                            <p class="text-center" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Tara Sim</p>
-                            <center>
-                                <a href="#" class="rounded-0 btn-outline-light" style="color: #4E220E;">
-                                <button type="button" class="btn addtoread rounded-0 mb-3">Add to Space</button></a>
-                            </center>
+                            <p class="text-center mb-5" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Tara Sim</p>
                         </div>
                     </div>
-                     <div class="col-6 col-sm">
+
+                    <div class="book col-6 col-md-4 col-lg-2 d-sm-block">
                         <div class="container d-lg-flex d-block justify-content-center">
-                            <img src="adventure 2.jpg" class="img-thumbnail img-fluid w-100">
+                            <img src="adventure 2.jpg" class="img-thumbnail img-fluid">
                         </div>
                         <div class="col">
+                            <hr style="color:#4E220E;">
+                            <center>
+                                <button type="button" 
+                                        class="btn rounded-0 mt-1 mb-1" 
+                                        onclick="change214()" 
+                                        id="btn_change214"
+                                        style="background-color: #F8E0D5; border-color: white; color: #4E220E;">
+                                        Add to Space</button>
+                            </center>
+                            <hr style="color:#4E220E;">
                             <p class="text-center  m-2" style="color:#4E220E;">Girl Island</p>
-                            <p class="text-center" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Kate Castle</p>
-                            <center>
-                                <a href="#" class="rounded-0 btn-outline-light" style="color: #4E220E;">
-                                <button type="button" class="btn addtoread rounded-0 mb-3">Add to Space</button></a>
-                            </center>
+                            <p class="text-center mb-5" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Kate Castle</p>
                         </div>
                     </div>
-                    <div class="col-6 col-sm">
+
+                    <div class="book col-6 col-md-4 col-lg-2 d-sm-block">
                         <div class="container d-lg-flex d-block justify-content-center">
-                            <img src="adventure 3.jpg" class="img-thumbnail img-fluid w-100">
+                            <img src="adventure 3.jpg" class="img-thumbnail img-fluid">
                         </div>
                         <div class="col">
+                            <hr style="color:#4E220E;">
+                            <center>
+                                <button type="button" 
+                                        class="btn rounded-0 mt-1 mb-1" 
+                                        onclick="change215()" 
+                                        id="btn_change215"
+                                        style="background-color: #F8E0D5; border-color: white; color: #4E220E;">
+                                        Add to Space</button>
+                            </center>
+                            <hr style="color:#4E220E;">
                             <p class="text-center m-2" style="color:#4E220E;">Trailer Park Trickster</p>
-                            <p class="text-center" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">David R. Slayton</p>
-                            <center>
-                                <a href="#" class="rounded-0 btn-outline-light" style="color: #4E220E;">
-                                <button type="button" class="btn addtoread rounded-0 mb-3">Add to Space</button></a>
-                            </center>
+                            <p class="text-center mb-5" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">David R. Slayton</p>
                         </div>
                     </div>
-                    <div class="col-6 col-sm">
+
+                    <div class="book col-6 col-md-4 col-lg-2 d-sm-block">
                         <div class="container d-lg-flex d-block justify-content-center">
-                            <img src="adventure 4.jpg" class="img-thumbnail img-fluid w-100">
+                            <img src="adventure 4.jpg" class="img-thumbnail img-fluid">
                         </div>
                         <div class="col">
+                            <hr style="color:#4E220E;">
+                            <center>
+                                <button type="button" 
+                                        class="btn rounded-0 mt-1 mb-1" 
+                                        onclick="change216()" 
+                                        id="btn_change216"
+                                        style="background-color: #F8E0D5; border-color: white; color: #4E220E;">
+                                        Add to Space</button>
+                            </center>
+                            <hr style="color:#4E220E;">
                             <p class="text-center m-2" style="color:#4E220E;">Lovers of the Unbound Kingdoms: Volume One</p>
-                            <p class="text-center" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Sharon F Kay</p>
-                            <center>
-                                <a href="#" class="rounded-0 btn-outline-light" style="color: #4E220E;">
-                                <button type="button" class="btn addtoread rounded-0 mb-3">Add to Space</button></a>
-                            </center>
+                            <p class="text-center mb-5" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Sharon F Kay</p>
                         </div>
                     </div>
-                    <div class="col-6 col-sm">
+
+                    <div class="book col-6 col-md-4 col-lg-2 d-sm-block">
                         <div class="container d-lg-flex d-block justify-content-center">
-                            <img src="adventure 5.jpg" class="img-thumbnail img-fluid w-100">
+                            <img src="adventure 5.jpg" class="img-thumbnail img-fluid">
                         </div>
                         <div class="col">
+                            <hr style="color:#4E220E;">
+                            <center>
+                                <button type="button" 
+                                        class="btn rounded-0 mt-1 mb-1" 
+                                        onclick="change217()" 
+                                        id="btn_change217"
+                                        style="background-color: #F8E0D5; border-color: white; color: #4E220E;">
+                                        Add to Space</button>
+                            </center>
+                            <hr style="color:#4E220E;">
                             <p class="text-center m-2" style="color:#4E220E;">Not Your Sidekick</p>
-                            <p class="text-center" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">C. B. Lee</p>
-                            <center>
-                                <a href="#" class="rounded-0 btn-outline-light" style="color: #4E220E;">
-                                <button type="button" class="btn addtoread rounded-0 mb-3">Add to Space</button></a>
-                            </center>
+                            <p class="text-center mb-5" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">C. B. Lee</p>
                         </div>
                     </div>
-                     <div class="col-6 col-sm">
+
+                    <div class="book col-6 col-md-4 col-lg-2 d-sm-block">
                         <div class="container d-lg-flex d-block justify-content-center">
-                            <img src="adventure 6.jpg" class="img-thumbnail img-fluid w-100">
+                            <img src="adventure 6.jpg" class="img-thumbnail img-fluid">
                         </div>
                         <div class="col">
-                            <p class="text-center m-2" style="color:#4E220E;">Dreadnought</p>
-                            <p class="text-center" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">April Daniels</p>
+                            <hr style="color:#4E220E;">
                             <center>
-                                <a href="#" class="rounded-0 btn-outline-light" style="color: #4E220E;">
-                                <button type="button" class="btn addtoread rounded-0 mb-3">Add to Space</button></a>
+                                <button type="button" 
+                                        class="btn rounded-0 mt-1 mb-1" 
+                                        onclick="change218()" 
+                                        id="btn_change218"
+                                        style="background-color: #F8E0D5; border-color: white; color: #4E220E;">
+                                        Add to Space</button>
                             </center>
+                            <hr style="color:#4E220E;">
+                            <p class="text-center m-2" style="color:#4E220E;">Dreadnought</p>
+                            <p class="text-center mb-5" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">April Daniels</p>
                         </div>
                     </div>
+
                 </div>
 
                 <div class="row"><!--4th row--> 
                     
-                    <div class="col-6 col-sm">
+                    <div class="book col-6 col-md-4 col-lg-2 d-sm-block">
                         <div class="container d-lg-flex d-block justify-content-center">
-                            <img src="adventure 7.jpg" class="img-thumbnail img-fluid w-100">
+                            <img src="adventure 7.jpg" class="img-thumbnail img-fluid">
                         </div>
                         <div class="col">
+                            <hr style="color:#4E220E;">
+                            <center>
+                                <button type="button" 
+                                        class="btn rounded-0 mt-1 mb-1" 
+                                        onclick="change219()" 
+                                        id="btn_change219"
+                                        style="background-color: #F8E0D5; border-color: white; color: #4E220E;">
+                                        Add to Space</button>
+                            </center>
+                            <hr style="color:#4E220E;">
                             <p class="text-center m-2" style="color:#4E220E;">Nothing Special (Nothing Special, #1)</p>
-                            <p class="text-center" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">A.E. Via</p>
-                            <center>
-                                <a href="#" class="rounded-0 btn-outline-light" style="color: #4E220E;">
-                                <button type="button" class="btn addtoread rounded-0 mb-3">Add to Space</button></a>
-                            </center>
+                            <p class="text-center mb-5" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">A.E. Via</p>
                         </div>
                     </div>
-                    <div class="col-6 col-sm">
+
+                    <div class="book col-6 col-md-4 col-lg-2 d-sm-block">
                         <div class="container d-lg-flex d-block justify-content-center">
-                            <img src="adventure 8.jpg" class="img-thumbnail img-fluid w-100">
+                            <img src="adventure 8.jpg" class="img-thumbnail img-fluid">
                         </div>
                         <div class="col">
+                            <hr style="color:#4E220E;">
+                            <center>
+                                <button type="button" 
+                                        class="btn rounded-0 mt-1 mb-1" 
+                                        onclick="change220()" 
+                                        id="btn_change220"
+                                        style="background-color: #F8E0D5; border-color: white; color: #4E220E;">
+                                        Add to Space</button>
+                            </center>
+                            <hr style="color:#4E220E;">
                             <p class="text-center m-2" style="color:#4E220E;">Maurice</p>
-                            <p class="text-center" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">E. M. Forster</p>
-                            <center>
-                                <a href="#" class="rounded-0 btn-outline-light" style="color: #4E220E;">
-                                <button type="button" class="btn addtoread rounded-0 mb-3">Add to Space</button></a>
-                            </center>
+                            <p class="text-center mb-5" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">E. M. Forster</p>
                         </div>
                     </div>
-                    <div class="col-6 col-sm">
+
+                    <div class="book col-6 col-md-4 col-lg-2 d-sm-block">
                         <div class="container d-lg-flex d-block justify-content-center">
-                            <img src="adventure 9.jpg" class="img-thumbnail img-fluid w-100">
+                            <img src="adventure 9.jpg" class="img-thumbnail img-fluid">
                         </div>
                         <div class="col">
+                            <hr style="color:#4E220E;">
+                            <center>
+                                <button type="button" 
+                                        class="btn rounded-0 mt-1 mb-1" 
+                                        onclick="change221()" 
+                                        id="btn_change221"
+                                        style="background-color: #F8E0D5; border-color: white; color: #4E220E;">
+                                        Add to Space</button>
+                            </center>
+                            <hr style="color:#4E220E;">
                             <p class="text-center m-2" style="color:#4E220E;">Brokeback Mountain</p>
-                            <p class="text-center" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Annie Proulx</p>
-                            <center>
-                                <a href="#" class="rounded-0 btn-outline-light" style="color: #4E220E;">
-                                <button type="button" class="btn addtoread rounded-0 mb-3">Add to Space</button></a>
-                            </center>
+                            <p class="text-center mb-5" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Annie Proulx</p>
                         </div>
                     </div>
-                     <div class="col-6 col-sm">
+
+                    <div class="book col-6 col-md-4 col-lg-2 d-sm-block">
                         <div class="container d-lg-flex d-block justify-content-center">
-                            <img src="adventure 10.jpg" class="img-thumbnail img-fluid w-100">
+                            <img src="adventure 10.jpg" class="img-thumbnail img-fluid">
                         </div>
                         <div class="col">
+                            <hr style="color:#4E220E;">
+                            <center>
+                                <button type="button" 
+                                        class="btn rounded-0 mt-1 mb-1" 
+                                        onclick="change222()" 
+                                        id="btn_change222"
+                                        style="background-color: #F8E0D5; border-color: white; color: #4E220E;">
+                                        Add to Space</button>
+                            </center>
+                            <hr style="color:#4E220E;">
                             <p class="text-center m-2" style="color:#4E220E;">The Cat in the Cradle (Loka Legends, #1)</p>
-                            <p class="text-center" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Jay Bell</p>
-                            <center>
-                                <a href="#" class="rounded-0 btn-outline-light" style="color: #4E220E;">
-                                <button type="button" class="btn addtoread rounded-0 mb-3">Add to Space</button></a>
-                            </center>
+                            <p class="text-center mb-5" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Jay Bell</p>
                         </div>
                     </div>
-                    <div class="col-6 col-sm">
+
+                    <div class="book col-6 col-md-4 col-lg-2 d-sm-block">
                         <div class="container d-lg-flex d-block justify-content-center">
-                            <img src="adventure 11.jpg" class="img-thumbnail img-fluid w-100">
+                            <img src="adventure 11.jpg" class="img-thumbnail img-fluid">
                         </div>
                         <div class="col">
+                            <hr style="color:#4E220E;">
+                            <center>
+                                <button type="button" 
+                                        class="btn rounded-0 mt-1 mb-1" 
+                                        onclick="change223()" 
+                                        id="btn_change223"
+                                        style="background-color: #F8E0D5; border-color: white; color: #4E220E;">
+                                        Add to Space</button>
+                            </center>
+                            <hr style="color:#4E220E;">
                             <p class="text-center m-2" style="color:#4E220E;">The Land of Night: Scarlet and the White Wolf, #3</p>
-                            <p class="text-center" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Kirby Crow</p>
-                            <center>
-                                <a href="#" class="rounded-0 btn-outline-light" style="color: #4E220E;">
-                                <button type="button" class="btn addtoread rounded-0 mb-3">Add to Space</button></a>
-                            </center>
+                            <p class="text-center mb-5" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Kirby Crow</p>
                         </div>
                     </div>
-                    <div class="col-6 col-sm">
+
+                    <div class="book col-6 col-md-4 col-lg-2 d-sm-block">
                         <div class="container d-lg-flex d-block justify-content-center">
-                            <img src="adventure 12.jpg" class="img-thumbnail img-fluid w-100">
+                            <img src="adventure 12.jpg" class="img-thumbnail img-fluid">
                         </div>
                         <div class="col">
-                            <p class="text-center m-2" style="color:#4E220E;">Scarlet and the White Wolf (Scarlet and the White Wolf, #1)</p>
-                            <p class="text-center" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Kirby Crow</p>
+                            <hr style="color:#4E220E;">
                             <center>
-                                <a href="#" class="rounded-0 btn-outline-light" style="color: #4E220E;">
-                                <button type="button" class="btn addtoread rounded-0 mb-3">Add to Space</button></a>
+                                <button type="button" 
+                                        class="btn rounded-0 mt-1 mb-1" 
+                                        onclick="change224()" 
+                                        id="btn_change224"
+                                        style="background-color: #F8E0D5; border-color: white; color: #4E220E;">
+                                        Add to Space</button>
                             </center>
+                            <hr style="color:#4E220E;">
+                            <p class="text-center m-2" style="color:#4E220E;">Scarlet and the White Wolf (Scarlet and the White Wolf, #1)</p>
+                            <p class="text-center mb-5" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Kirby Crow</p>
                         </div>
                     </div>
+
                 </div>
 
                 <div class="row"><!--5th row--> 
-                    <div class="col-6 col-sm">
+
+                    <div class="book col-6 col-md-4 col-lg-2 d-sm-block">
                         <div class="container d-lg-flex d-block justify-content-center">
-                            <img src="young adult 1.jpg" class="img-thumbnail img-fluid w-100">
+                            <img src="young adult 1.jpg" class="img-thumbnail img-fluid">
                         </div>
                         <div class="col">
+                            <hr style="color:#4E220E;">
+                            <center>
+                                <button type="button" 
+                                        class="btn rounded-0 mt-1 mb-1" 
+                                        onclick="change225()" 
+                                        id="btn_change225"
+                                        style="background-color: #F8E0D5; border-color: white; color: #4E220E;">
+                                        Add to Space</button>
+                            </center>
+                            <hr style="color:#4E220E;">
                             <p class="text-center m-2" style="color:#4E220E;">Love & Other Natural Disasters</p>
-                            <p class="text-center" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Misa Sugiura</p>
-                            <center>
-                                <a href="#" class="rounded-0 btn-outline-light" style="color: #4E220E;">
-                                <button type="button" class="btn addtoread rounded-0 mb-3">Add to Space</button></a>
-                            </center>
+                            <p class="text-center mb-5" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Misa Sugiura</p>
                         </div>
                     </div>
-                     <div class="col-6 col-sm">
+
+                    <div class="book col-6 col-md-4 col-lg-2 d-sm-block">
                         <div class="container d-lg-flex d-block justify-content-center">
-                            <img src="young adult 2.jpg" class="img-thumbnail img-fluid w-100">
+                            <img src="young adult 2.jpg" class="img-thumbnail img-fluid">
                         </div>
                         <div class="col">
+                            <hr style="color:#4E220E;">
+                            <center>
+                                <button type="button" 
+                                        class="btn rounded-0 mt-1 mb-1" 
+                                        onclick="change226()" 
+                                        id="btn_change226"
+                                        style="background-color: #F8E0D5; border-color: white; color: #4E220E;">
+                                        Add to Space</button>
+                            </center>
+                            <hr style="color:#4E220E;">
                             <p class="text-center  m-2" style="color:#4E220E;">The Falling in Love Montage</p>
-                            <p class="text-center" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Ciara Smyth</p>
-                            <center>
-                                <a href="#" class="rounded-0 btn-outline-light" style="color: #4E220E;">
-                                <button type="button" class="btn addtoread rounded-0 mb-3">Add to Space</button></a>
-                            </center>
+                            <p class="text-center mb-5" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Ciara Smyth</p>
                         </div>
                     </div>
-                    <div class="col-6 col-sm">
+
+                    <div class="book col-6 col-md-4 col-lg-2 d-sm-block">
                         <div class="container d-lg-flex d-block justify-content-center">
-                            <img src="young adult 3.jpg" class="img-thumbnail img-fluid w-100">
+                            <img src="young adult 3.jpg" class="img-thumbnail img-fluid">
                         </div>
                         <div class="col">
+                            <hr style="color:#4E220E;">
+                            <center>
+                                <button type="button" 
+                                        class="btn rounded-0 mt-1 mb-1" 
+                                        onclick="change227()" 
+                                        id="btn_change227"
+                                        style="background-color: #F8E0D5; border-color: white; color: #4E220E;">
+                                        Add to Space</button>
+                            </center>
+                            <hr style="color:#4E220E;">
                             <p class="text-center m-2" style="color:#4E220E;">So This Is Ever After</p>
-                            <p class="text-center" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">F. T. Lukens</p>
-                            <center>
-                                <a href="#" class="rounded-0 btn-outline-light" style="color: #4E220E;">
-                                <button type="button" class="btn addtoread rounded-0 mb-3">Add to Space</button></a>
-                            </center>
+                            <p class="text-center mb-5" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">F. T. Lukens</p>
                         </div>
                     </div>
-                    <div class="col-6 col-sm">
+
+                    <div class="book col-6 col-md-4 col-lg-2 d-sm-block">
                         <div class="container d-lg-flex d-block justify-content-center">
-                            <img src="young adult 4.jpg" class="img-thumbnail img-fluid w-100">
+                            <img src="young adult 4.jpg" class="img-thumbnail img-fluid">
                         </div>
                         <div class="col">
+                            <hr style="color:#4E220E;">
+                            <center>
+                                <button type="button" 
+                                        class="btn rounded-0 mt-1 mb-1" 
+                                        onclick="change228()" 
+                                        id="btn_change228"
+                                        style="background-color: #F8E0D5; border-color: white; color: #4E220E;">
+                                        Add to Space</button>
+                            </center>
+                            <hr style="color:#4E220E;">
                             <p class="text-center m-2" style="color:#4E220E;">Felix Ever After</p>
-                            <p class="text-center" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Kacen Callender</p>
-                            <center>
-                                <a href="#" class="rounded-0 btn-outline-light" style="color: #4E220E;">
-                                <button type="button" class="btn addtoread rounded-0 mb-3">Add to Space</button></a>
-                            </center>
+                            <p class="text-center mb-5" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Kacen Callender</p>
                         </div>
                     </div>
-                    <div class="col-6 col-sm">
+
+                    <div class="book col-6 col-md-4 col-lg-2 d-sm-block">
                         <div class="container d-lg-flex d-block justify-content-center">
-                            <img src="young adult 5.jpg" class="img-thumbnail img-fluid w-100">
+                            <img src="young adult 5.jpg" class="img-thumbnail img-fluid">
                         </div>
                         <div class="col">
+                            <hr style="color:#4E220E;">
+                            <center>
+                                <button type="button" 
+                                        class="btn rounded-0 mt-1 mb-1" 
+                                        onclick="change229()" 
+                                        id="btn_change229"
+                                        style="background-color: #F8E0D5; border-color: white; color: #4E220E;">
+                                        Add to Space</button>
+                            </center>
+                            <hr style="color:#4E220E;">
                             <p class="text-center m-2" style="color:#4E220E;">Ophelia After All</p>
-                            <p class="text-center" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Racquel Marie</p>
-                            <center>
-                                <a href="#" class="rounded-0 btn-outline-light" style="color: #4E220E;">
-                                <button type="button" class="btn addtoread rounded-0 mb-3">Add to Space</button></a>
-                            </center>
+                            <p class="text-center mb-5" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Racquel Marie</p>
                         </div>
                     </div>
-                     <div class="col-6 col-sm">
+
+                    <div class="book col-6 col-md-4 col-lg-2 d-sm-block">
                         <div class="container d-lg-flex d-block justify-content-center">
-                            <img src="young adult 6.jpg" class="img-thumbnail img-fluid w-100">
+                            <img src="young adult 6.jpg" class="img-thumbnail img-fluid">
                         </div>
                         <div class="col">
-                            <p class="text-center m-2" style="color:#4E220E;">The Boy in the Red Dress</p>
-                            <p class="text-center" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Kristin Lambert</p>
+                            <hr style="color:#4E220E;">
                             <center>
-                                <a href="#" class="rounded-0 btn-outline-light" style="color: #4E220E;">
-                                <button type="button" class="btn addtoread rounded-0 mb-3">Add to Space</button></a>
+                                <button type="button" 
+                                        class="btn rounded-0 mt-1 mb-1" 
+                                        onclick="change230()" 
+                                        id="btn_change230"
+                                        style="background-color: #F8E0D5; border-color: white; color: #4E220E;">
+                                        Add to Space</button>
                             </center>
+                            <hr style="color:#4E220E;">
+                            <p class="text-center m-2" style="color:#4E220E;">The Boy in the Red Dress</p>
+                            <p class="text-center mb-5" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Kristin Lambert</p>
                         </div>
                     </div>
+
                 </div>
+
             </div>
+
         </div>
     </div>
+
     <!--start of pagination-->
-    <nav aria-label="Page navigation">
+    <!-- <nav aria-label="Page navigation">
         <ul class="pagination justify-content-center my-5">
             <li class="page-item">
                 <a class="page-link pages" href="#">Previous</a>
@@ -598,8 +816,9 @@
                 <a class="page-link pages" href="#">Next</a>
             </li>
         </ul>
-    </nav>
+    </nav> -->
     <!--end of pagination-->
+    
     <!--start of footer-->
     <footer style="background-color: #F8E0D5;">
         <div class="container-fluid">
@@ -657,5 +876,11 @@
         </div>
     </footer>
     <!--end of footer-->
+    
 </body>
+<script src="./js/allBooksSearch.js"></script>
+<script src="./js/allBook_button.js"></script>
+<!-- Add to Space JS -->
+<script src="./js/user-mybooks.js"></script>
+<script src="./js/user-mybook2.js"></script>
 </html>

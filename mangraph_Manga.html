@@ -70,7 +70,7 @@
                     </ul>
                     
                     <form class="input-group d-lg-flex w-75 justify-content-center mx-auto srchbar" role="search">
-                        <input type="text" class="form-control border-0 rounded-0" placeholder="Books, Authors, Community, etc." aria-label="Search">
+                        <input type="text" class="form-control border-0 rounded-0" placeholder="Books, Authors, Community, etc." aria-label="Search" id="mangaSearch">
                         <button type="text" class="srh"><i class="bi bi-search"></i></button>
                     </form>
 
@@ -123,7 +123,7 @@
                                             <hr style="color: #4E220E;">
                                             <div class="text-center text-lg-center mt-auto pt-2">
                                                 <!--log in button-->        
-                                                <a href="" class="btn-outline-light text-center" style="color: #4E220E;"><button type="submit" class="btn signinbtn w-25 mb-3">
+                                                <a href="userprofile_page.html" class="btn-outline-light text-center" style="color: #4E220E;"><button type="submit" class="btn signinbtn w-25 mb-3">
                                                     Login</button></a>
                                                 <!--log in button--> 
                                                 <p class="small fw-bold mb-0 text-lg-center mb-2" style="color:#4E220E;">Don't have an account? 
@@ -193,234 +193,350 @@
                 </div>
             </div>
             
-            <div class="col-md-8 m-auto mt-5">
+            <div class="col-md-8 my-5">
 
                 <h1 class="display-4 text-center mb-5" style="color:#4E220E;">MANGA</h1>
 
                 <div class="row"><!--1st row--> 
-                    <div class="col-6 col-sm-3">
+
+                    <div class="book col-6 col-md-4 col-lg-3 d-sm-block">
                         <div class="container d-lg-flex d-block justify-content-center">
                             <img src="manga 1.jpg" class="img-thumbnail img-fluid w-100">
                         </div>
                         <div class="col">
-                            <p class="text-center m-2" style="color:#4E220E;">My Brother's Husband</p>
-                            <p class="text-center" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Gengoroh Tagame</p>
+                            <hr style="color:#4E220E;">
                             <center>
-                                <a href="#" class="rounded-0 btn-outline-light" style="color: #4E220E;">
-                                <button type="button" class="btn addtoread rounded-0 mb-3">Add to Space</button></a>
+                                <button type="button" 
+                                        class="btn rounded-0 mt-1 mb-1" 
+                                        onclick="change169()" 
+                                        id="btn_change169"
+                                        style="background-color: #F8E0D5; border-color: white; color: #4E220E;">
+                                        Add to Space</button>
                             </center>
+                            <hr style="color:#4E220E;">
+                            <p class="text-center m-2" style="color:#4E220E;">My Brother's Husband</p>
+                            <p class="text-center mb-5" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Gengoroh Tagame</p>
                         </div>
                     </div>
-                     <div class="col-6 col-sm-3">
+
+                    <div class="book col-6 col-md-4 col-lg-3 d-sm-block">
                         <div class="container d-lg-flex d-block justify-content-center">
                             <img src="manga 2.jpg" class="img-thumbnail img-fluid w-100">
                         </div>
                         <div class="col">
-                            <p class="text-center  m-2" style="color:#4E220E;">The Bride was a Boy</p>
-                            <p class="text-center" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Chii</p>
+                            <hr style="color:#4E220E;">
                             <center>
-                                <a href="#" class="rounded-0 btn-outline-light" style="color: #4E220E;">
-                                <button type="button" class="btn addtoread rounded-0 mb-3">Add to Space</button></a>
+                                <button type="button" 
+                                        class="btn rounded-0 mt-1 mb-1" 
+                                        onclick="change170()" 
+                                        id="btn_change170"
+                                        style="background-color: #F8E0D5; border-color: white; color: #4E220E;">
+                                        Add to Space</button>
                             </center>
+                            <hr style="color:#4E220E;">
+                            <p class="text-center m-2" style="color:#4E220E;">Our Teachers Are Dating! Vol. 1</p>
+                            <p class="text-center mb-5" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Chii</p>
                         </div>
                     </div>
-                    <div class="col-6 col-sm-3">
+
+                    <div class="book col-6 col-md-4 col-lg-3 d-sm-block">
                         <div class="container d-lg-flex d-block justify-content-center">
                             <img src="manga 3.jpg" class="img-thumbnail img-fluid w-100">
                         </div>
                         <div class="col">
-                            <p class="text-center m-2" style="color:#4E220E;">Go for It, Nakamura!</p>
-                            <p class="text-center" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Syundei</p>
+                            <hr style="color:#4E220E;">
                             <center>
-                                <a href="#" class="rounded-0 btn-outline-light" style="color: #4E220E;">
-                                <button type="button" class="btn addtoread rounded-0 mb-3">Add to Space</button></a>
+                                <button type="button" 
+                                        class="btn rounded-0 mt-1 mb-1" 
+                                        onclick="change171()" 
+                                        id="btn_change171"
+                                        style="background-color: #F8E0D5; border-color: white; color: #4E220E;">
+                                        Add to Space</button>
                             </center>
+                            <hr style="color:#4E220E;">
+                            <p class="text-center m-2" style="color:#4E220E;">Go for It, Nakamura!</p>
+                            <p class="text-center mb-5" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Syundei</p>
                         </div>
                     </div>
-                    <div class="col-6 col-sm-3">
+
+                    <div class="book col-6 col-md-4 col-lg-3 d-sm-block">
                         <div class="container d-lg-flex d-block justify-content-center">
                             <img src="manga 4.jpg" class="img-thumbnail img-fluid w-100">
                         </div>
                         <div class="col">
-                            <p class="text-center m-2" style="color:#4E220E;">Our Teachers Are Dating! Vol. 1</p>
-                            <p class="text-center" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Pikachi Ohi</p>
+                            <hr style="color:#4E220E;">
                             <center>
-                                <a href="#" class="rounded-0 btn-outline-light" style="color: #4E220E;">
-                                <button type="button" class="btn addtoread rounded-0 mb-3">Add to Space</button></a>
+                                <button type="button" 
+                                        class="btn rounded-0 mt-1 mb-1" 
+                                        onclick="change172()" 
+                                        id="btn_change172"
+                                        style="background-color: #F8E0D5; border-color: white; color: #4E220E;">
+                                        Add to Space</button>
                             </center>
+                            <hr style="color:#4E220E;">
+                            <p class="text-center m-2" style="color:#4E220E;">The Bride was a Boy</p>
+                            <p class="text-center mb-5" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Pikachi Ohi</p>
                         </div>
                     </div>
+
                 </div>
 
                 <div class="row"><!--2nd row--> 
-                    <div class="col-6 col-sm-3">
+                    
+                    <div class="book col-6 col-md-4 col-lg-3 d-sm-block">
                         <div class="container d-lg-flex d-block justify-content-center">
                             <img src="manga 5.jpg" class="img-thumbnail img-fluid w-100">
                         </div>
                         <div class="col">
-                            <p class="text-center m-2" style="color:#4E220E;">Until I meet my husband</p>
-                            <p class="text-center" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Ryousuke Nanasaki</p>
+                            <hr style="color:#4E220E;">
                             <center>
-                                <a href="#" class="rounded-0 btn-outline-light" style="color: #4E220E;">
-                                <button type="button" class="btn addtoread rounded-0 mb-3">Add to Space</button></a>
+                                <button type="button" 
+                                        class="btn rounded-0 mt-1 mb-1" 
+                                        onclick="change173()" 
+                                        id="btn_change173"
+                                        style="background-color: #F8E0D5; border-color: white; color: #4E220E;">
+                                        Add to Space</button>
                             </center>
+                            <hr style="color:#4E220E;">
+                            <p class="text-center m-2" style="color:#4E220E;">Until I meet my husband</p>
+                            <p class="text-center mb-5" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Ryousuke Nanasaki</p>
                         </div>
                     </div>
-                     <div class="col-6 col-sm-3">
+
+                    <div class="book col-6 col-md-4 col-lg-3 d-sm-block">
                         <div class="container d-lg-flex d-block justify-content-center">
                             <img src="manga 6.jpg" class="img-thumbnail img-fluid w-100">
                         </div>
                         <div class="col">
-                            <p class="text-center m-2" style="color:#4E220E;">I Think Our Son Is Gay 01</p>
-                            <p class="text-center" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Okura</p>
+                            <hr style="color:#4E220E;">
                             <center>
-                                <a href="#" class="rounded-0 btn-outline-light" style="color: #4E220E;">
-                                <button type="button" class="btn addtoread rounded-0 mb-3">Add to Space</button></a>
+                                <button type="button" 
+                                        class="btn rounded-0 mt-1 mb-1" 
+                                        onclick="change174()" 
+                                        id="btn_change174"
+                                        style="background-color: #F8E0D5; border-color: white; color: #4E220E;">
+                                        Add to Space</button>
                             </center>
+                            <hr style="color:#4E220E;">
+                            <p class="text-center m-2" style="color:#4E220E;">I Think Our Son Is Gay 01</p>
+                            <p class="text-center mb-5" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Okura</p>
                         </div>
                     </div>
-                    <div class="col-6 col-sm-3">
+
+                    <div class="book col-6 col-md-4 col-lg-3 d-sm-block">
                         <div class="container d-lg-flex d-block justify-content-center">
                             <img src="manga 7.jpg" class="img-thumbnail img-fluid w-100">
                         </div>
                         <div class="col">
-                            <p class="text-center m-2" style="color:#4E220E;">I Love You So Much, I Hate You</p>
-                            <p class="text-center" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">yuni</p>
+                            <hr style="color:#4E220E;">
                             <center>
-                                <a href="#" class="rounded-0 btn-outline-light" style="color: #4E220E;">
-                                <button type="button" class="btn addtoread rounded-0 mb-3">Add to Space</button></a>
+                                <button type="button" 
+                                        class="btn rounded-0 mt-1 mb-1" 
+                                        onclick="change175()" 
+                                        id="btn_change175"
+                                        style="background-color: #F8E0D5; border-color: white; color: #4E220E;">
+                                        Add to Space</button>
                             </center>
+                            <hr style="color:#4E220E;">
+                            <p class="text-center m-2" style="color:#4E220E;">I Love You So Much, I Hate You</p>
+                            <p class="text-center mb-5" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">yuni</p>
                         </div>
                     </div>
-                    <div class="col-6 col-sm-3">
+
+                    <div class="book col-6 col-md-4 col-lg-3 d-sm-block">
                         <div class="container d-lg-flex d-block justify-content-center">
                             <img src="manga 8.jpg" class="img-thumbnail img-fluid w-100">
                         </div>
                         <div class="col">
-                            <p class="text-center m-2" style="color:#4E220E;">Yuri Life</p>
-                            <p class="text-center" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Kurukuruhime</p>
+                            <hr style="color:#4E220E;">
                             <center>
-                                <a href="#" class="rounded-0 btn-outline-light" style="color: #4E220E;">
-                                <button type="button" class="btn addtoread rounded-0 mb-3">Add to Space</button></a>
+                                <button type="button" 
+                                        class="btn rounded-0 mt-1 mb-1" 
+                                        onclick="change176()" 
+                                        id="btn_change176"
+                                        style="background-color: #F8E0D5; border-color: white; color: #4E220E;">
+                                        Add to Space</button>
                             </center>
+                            <hr style="color:#4E220E;">
+                            <p class="text-center m-2" style="color:#4E220E;">Yuri Life</p>
+                            <p class="text-center mb-5" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Kurukuruhime</p>
                         </div>
                     </div>
+
                 </div>
 
                 <div class="row"><!--3rd row--> 
-                    <div class="col-6 col-sm-3">
+
+                    <div class="book col-6 col-md-4 col-lg-3 d-sm-block">
                         <div class="container d-lg-flex d-block justify-content-center">
                             <img src="manga 9.jpg" class="img-thumbnail img-fluid w-100">
                         </div>
                         <div class="col">
-                            <p class="text-center m-2" style="color:#4E220E;">Deadlock Volume 1 (Yaoi Manga)</p>
-                            <p class="text-center" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Saki Aida</p>
+                            <hr style="color:#4E220E;">
                             <center>
-                                <a href="#" class="rounded-0 btn-outline-light" style="color: #4E220E;">
-                                <button type="button" class="btn addtoread rounded-0 mb-3">Add to Space</button></a>
+                                <button type="button" 
+                                        class="btn rounded-0 mt-1 mb-1" 
+                                        onclick="change177()" 
+                                        id="btn_change177"
+                                        style="background-color: #F8E0D5; border-color: white; color: #4E220E;">
+                                        Add to Space</button>
                             </center>
+                            <hr style="color:#4E220E;">
+                            <p class="text-center m-2" style="color:#4E220E;">Deadlock Volume 1 (Yaoi Manga)</p>
+                            <p class="text-center mb-5" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Saki Aida</p>
                         </div>
                     </div>
-                     <div class="col-6 col-sm-3">
+
+                    <div class="book col-6 col-md-4 col-lg-3 d-sm-block">
                         <div class="container d-lg-flex d-block justify-content-center">
                             <img src="manga 10.jpg" class="img-thumbnail img-fluid w-100">
                         </div>
                         <div class="col">
-                            <p class="text-center m-2" style="color:#4E220E;">To Sow A Seed (Yaoi Manga)</p>
-                            <p class="text-center" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Terashima</p>
+                            <hr style="color:#4E220E;">
                             <center>
-                                <a href="#" class="rounded-0 btn-outline-light" style="color: #4E220E;">
-                                <button type="button" class="btn addtoread rounded-0 mb-3">Add to Space</button></a>
+                                <button type="button" 
+                                        class="btn rounded-0 mt-1 mb-1" 
+                                        onclick="change178()" 
+                                        id="btn_change178"
+                                        style="background-color: #F8E0D5; border-color: white; color: #4E220E;">
+                                        Add to Space</button>
                             </center>
+                            <hr style="color:#4E220E;">
+                            <p class="text-center m-2" style="color:#4E220E;">To Sow A Seed (Yaoi Manga)</p>
+                            <p class="text-center mb-5 style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Terashima</p>
                         </div>
                     </div>
-                    <div class="col-6 col-sm-3">
+
+                    <div class="book col-6 col-md-4 col-lg-3 d-sm-block">
                         <div class="container d-lg-flex d-block justify-content-center">
                             <img src="manga 11.jpg" class="img-thumbnail img-fluid w-100">
                         </div>
                         <div class="col">
-                            <p class="text-center m-2" style="color:#4E220E;">Our Wonderful Days Vol. 1</p>
-                            <p class="text-center" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Kei Hamuro</p>
+                            <hr style="color:#4E220E;">
                             <center>
-                                <a href="#" class="rounded-0 btn-outline-light" style="color: #4E220E;">
-                                <button type="button" class="btn addtoread rounded-0 mb-3">Add to Space</button></a>
+                                <button type="button" 
+                                        class="btn rounded-0 mt-1 mb-1" 
+                                        onclick="change179()" 
+                                        id="btn_change179"
+                                        style="background-color: #F8E0D5; border-color: white; color: #4E220E;">
+                                        Add to Space</button>
                             </center>
+                            <hr style="color:#4E220E;">
+                            <p class="text-center m-2" style="color:#4E220E;">Our Wonderful Days Vol. 1</p>
+                            <p class="text-center mb-5" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Kei Hamuro</p>
                         </div>
                     </div>
-                    <div class="col-6 col-sm-3">
+
+                    <div class="book col-6 col-md-4 col-lg-3 d-sm-block">
                         <div class="container d-lg-flex d-block justify-content-center">
                             <img src="manga 12.jpg" class="img-thumbnail img-fluid w-100">
                         </div>
                         <div class="col">
-                            <p class="text-center m-2" style="color:#4E220E;">Wednesday - Maybe I Love You (Yuri)</p>
-                            <p class="text-center" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Ruri Hazuki</p>
+                            <hr style="color:#4E220E;">
                             <center>
-                                <a href="#" class="rounded-0 btn-outline-light" style="color: #4E220E;">
-                                <button type="button" class="btn addtoread rounded-0 mb-3">Add to Space</button></a>
+                                <button type="button" 
+                                        class="btn rounded-0 mt-1 mb-1" 
+                                        onclick="change180()" 
+                                        id="btn_change180"
+                                        style="background-color: #F8E0D5; border-color: white; color: #4E220E;">
+                                        Add to Space</button>
                             </center>
+                            <hr style="color:#4E220E;">
+                            <p class="text-center m-2" style="color:#4E220E;">Wednesday - Maybe I Love You (Yuri)</p>
+                            <p class="text-center mb-5" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Ruri Hazuki</p>
                         </div>
                     </div>
+
                 </div>
 
-                <div class="row"><!--4th row--> 
-                    <div class="col-6 col-sm-3">
+                <div class="row"><!--4th row-->
+
+                    <div class="book col-6 col-md-4 col-lg-3 d-sm-block">
                         <div class="container d-lg-flex d-block justify-content-center">
                             <img src="manga 13.jpg" class="img-thumbnail img-fluid w-100">
                         </div>
                         <div class="col">
-                            <p class="text-center m-2" style="color:#4E220E;">ALL YOU!! 1 (Yuri Manga)</p>
-                            <p class="text-center" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Ruri Hazuki</p>
+                            <hr style="color:#4E220E;">
                             <center>
-                                <a href="#" class="rounded-0 btn-outline-light" style="color: #4E220E;">
-                                <button type="button" class="btn addtoread rounded-0 mb-3">Add to Space</button></a>
+                                <button type="button" 
+                                        class="btn rounded-0 mt-1 mb-1" 
+                                        onclick="change181()" 
+                                        id="btn_change181"
+                                        style="background-color: #F8E0D5; border-color: white; color: #4E220E;">
+                                        Add to Space</button>
                             </center>
+                            <hr style="color:#4E220E;">
+                            <p class="text-center m-2" style="color:#4E220E;">ALL YOU!! 1 (Yuri Manga)</p>
+                            <p class="text-center mb-5" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Ruri Hazuki</p>
                         </div>
                     </div>
-                     <div class="col-6 col-sm-3">
+
+                    <div class="book col-6 col-md-4 col-lg-3 d-sm-block">
                         <div class="container d-lg-flex d-block justify-content-center">
                             <img src="manga 14.jpg" class="img-thumbnail img-fluid w-100">
                         </div>
                         <div class="col">
-                            <p class="text-center m-2" style="color:#4E220E;">The Song of Rainfall</p>
-                            <p class="text-center" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Nawo Inoue</p>
+                            <hr style="color:#4E220E;">
                             <center>
-                                <a href="#" class="rounded-0 btn-outline-light" style="color: #4E220E;">
-                                <button type="button" class="btn addtoread rounded-0 mb-3">Add to Space</button></a>
+                                <button type="button" 
+                                        class="btn rounded-0 mt-1 mb-1" 
+                                        onclick="change182()" 
+                                        id="btn_change182"
+                                        style="background-color: #F8E0D5; border-color: white; color: #4E220E;">
+                                        Add to Space</button>
                             </center>
+                            <hr style="color:#4E220E;">
+                            <p class="text-center m-2" style="color:#4E220E;">The Song of Rainfall</p>
+                            <p class="text-center mb-5" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Nawo Inoue</p>
                         </div>
                     </div>
-                    <div class="col-6 col-sm-3">
+
+                    <div class="book col-6 col-md-4 col-lg-3 d-sm-block">
                         <div class="container d-lg-flex d-block justify-content-center">
                             <img src="manga 15.jpg" class="img-thumbnail img-fluid w-100">
                         </div>
                         <div class="col">
-                            <p class="text-center m-2" style="color:#4E220E;">Beauty and the Beast Girl</p>
-                            <p class="text-center" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Neji</p>
+                            <hr style="color:#4E220E;">
                             <center>
-                                <a href="#" class="rounded-0 btn-outline-light" style="color: #4E220E;">
-                                <button type="button" class="btn addtoread rounded-0 mb-3">Add to Space</button></a>
+                                <button type="button" 
+                                        class="btn rounded-0 mt-1 mb-1" 
+                                        onclick="change183()" 
+                                        id="btn_change183"
+                                        style="background-color: #F8E0D5; border-color: white; color: #4E220E;">
+                                        Add to Space</button>
                             </center>
+                            <hr style="color:#4E220E;">
+                            <p class="text-center m-2" style="color:#4E220E;">Beauty and the Beast Girl</p>
+                            <p class="text-center mb-5" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Neji</p>
                         </div>
                     </div>
-                    <div class="col-6 col-sm-3">
+
+                    <div class="book col-6 col-md-4 col-lg-3 d-sm-block">
                         <div class="container d-lg-flex d-block justify-content-center">
                             <img src="manga 16.jpg" class="img-thumbnail img-fluid w-100">
                         </div>
                         <div class="col">
-                            <p class="text-center m-2" style="color:#4E220E;">Goodbye, My Rose Garden</p>
-                            <p class="text-center" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Dr. Pepperco</p>
+                            <hr style="color:#4E220E;">
                             <center>
-                                <a href="#" class="rounded-0 btn-outline-light" style="color: #4E220E;">
-                                <button type="button" class="btn addtoread rounded-0 mb-3">Add to Space</button></a>
+                                <button type="button" 
+                                        class="btn rounded-0 mt-1 mb-1" 
+                                        onclick="change184()" 
+                                        id="btn_change184"
+                                        style="background-color: #F8E0D5; border-color: white; color: #4E220E;">
+                                        Add to Space</button>
                             </center>
+                            <hr style="color:#4E220E;">
+                            <p class="text-center m-2" style="color:#4E220E;">Goodbye, My Rose Garden</p>
+                            <p class="text-center mb-5" style="color: #4E220E; opacity: 0.8; font-size: 11pt;">Dr. Pepperco</p>
                         </div>
                     </div>
+
                 </div>
 
                 <div class="row">
                     <div class="col-12">
                         <!--start of pagination-->
-                        <nav aria-label="Page navigation">
+                        <!-- <nav aria-label="Page navigation">
                             <ul class="pagination justify-content-center my-5">
                                 <li class="page-item">
                                     <a class="page-link pages" href="#">Previous</a>
@@ -440,7 +556,7 @@
                                 <li class="page-item">
                                     <a class="page-link pages" href="#">Next</a>
                                 </li>
-                            </ul>
+                            </ul> -->
                         </nav>
                         <!--end of pagination-->
                     </div>
@@ -508,4 +624,6 @@
     </footer>
     <!--end of footer-->
 </body>
+<script src="./js/allBook_button.js"></script>
+<script src="./js/mangaSearch.js"></script>
 </html>

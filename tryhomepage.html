@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenSpace</title>
+
+    <!--ONLINE CSS-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+		  rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+		  crossorigin="anonymous"/>
+    <link rel="stylesheet" href="second stylesheet.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+		    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+		    crossorigin="anonymous">
+    </script>
+    
+    <!--ICON ON TITLE BAR-->
+	<link rel="shortcut icon" href="logo.ico" type="image/x-icon"/>
+
+    <!--ICONS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+</head>
+<body style="background-color:#F8EDE8;">
+    <!--start of navbar-->
+        <div class="container-fluid" style="background-color:#F8E0D5;">
+            <div class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="indexMain_page.html">
+                    <img src="website logo.png" style="width: 170px;">
+                </a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#NavBarMenu">
+                    <span class="navbar-toggler-icon">
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="NavBarMenu">
+                    <ul class="navbar-nav text-center me-3 ms-3 my-1">
+                        <li class="nav-item">
+                            <a class="nav-link nabvrButton" href="indexMain_page.html">Home</a>
+                        </li> 
+                        <li class="nav-item">
+                            <a class="nav-link nabvrButton" href="about_page.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle nabvrButton" href="#" role="button" 
+                            data-bs-toggle="dropdown" aria-expanded="false">Book Categories</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item nabvrButton" href="all-books.html">All Books📚</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item nabvrButton" href="fiction_Action.html">Fiction Books📕</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item nabvrButton" href="nonfic_AutoBio.html">Non-Fiction Books📙</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item nabvrButton" href="fanfic_Movies.html">Fan-Fiction Books📗</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item nabvrButton" href="mangraph_Manga.html">Manga/Graphic Books📘</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nabvrButton" href="community_page.html">Community</a>
+                        </li>
+                    </ul>
+                    
+                    <form class="input-group d-lg-flex w-75 justify-content-center mx-auto srchbar" role="search">
+                        <input type="text" class="form-control border-0 rounded-0" placeholder="Books, Authors, Community, etc." aria-label="Search">
+                        <button type="text" class="srh"><i class="bi bi-search"></i></button>
+                    </form>
+
+                    <div class="col-lg-1 d-flex justify-content-center mx-1 my-2">
+                        <div class="logBttn"> <!--adding modal-->
+                            <button type="button" class="form-control btn rounded-0 logBttn"
+                            data-bs-toggle="modal"
+                            data-bs-target="#modalOne">Log In
+                            </button>
+                            <div class="modal fade" id="modalOne" tabindex="-1" style="background-color: #FFECE3;">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header" style="background-color: #F8E0D5;">
+                                            <h5 class="modal-title" id="modalTitle" style="color:#4E220E;">OpenSpace: Log In
+                                            <img src="website-logo.png" style="width: 10%;"></h5>
+                                            <button class="btn-close"
+                                            type="button"
+                                            data-bs-dismiss="modal"
+                                            aria-label="close">
+                                            </button>
+                                        </div>
+                                        <!--end modal header-->
+                                        <div class="modal-body" style="background-color: #F8EDE8;">
+                                            <form action="">
+                                                <!-- Email input -->
+                                                <div class="form-floating mb-4">
+                                                    <input type="email" id="emailSignIn" class="form-control form-control-lg rounded-0" placeholder="Email Address" required>
+                                                    <label for="emailSignIn" style="color:#4E220E;">Email Address</label>
+                                                </div>
+                                                <!-- Password input -->
+                                                <div class="form-floating mb-4">
+                                                    <input type="password" id="passwordSignIn" class="form-control form-control-lg rounded-0" placeholder="Password" required>
+                                                    <label for="passwordSignIn" style="color:#4E220E;">Password</label>
+                                                </div>
+                                            
+                                                <div class="d-flex justify-content-between">
+                                                <!-- Checkbox -->
+                                                    <div class="form-check mb-0">
+                                                        <input class="form-check-input me-2" type="checkbox" value="rememberMe" id="rememberMe" />
+                                                        <label class="form-check-label" for="rememberMe" style="color:#4E220E;">
+                                                            Remember me
+                                                        </label>
+                                                    </div>
+                                                    <a href="#" style="color: #4E220E; opacity: 90%;">Forgot password?</a>
+                                                </div>
+                                            </form>     
+                                        </div>
+                                        <!--end of modal body-->
+                                        <div class="modal-footer justify-content-center" style="background-color: #F8E0D5;">
+                                            <hr style="color: #4E220E;">
+                                            <div class="text-center text-lg-center mt-auto pt-2">
+                                                <!--log in button-->        
+                                                <a href="userprofile_page.html" class="btn-outline-light text-center" style="color: #4E220E;"><button type="submit" class="btn signinbtn w-25 mb-3">
+                                                    Login</button></a>
+                                                <!--log in button--> 
+                                                <p class="small fw-bold mb-0 text-lg-center mb-2" style="color:#4E220E;">Don't have an account? 
+                                                    <a href="signUp_page.html" style="color: #8c6e52">Register to Join us!</a>
+                                                </p>
+                                            </div>
+                                            <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-center">
+                                                <p class="fw-normal mb-3 mt-3 mx-2 text-center" style="color: #4E220E;">Sign in with</p>
+                                                <button type="button" class="btn btncircle mx-2 align" style="background-color: #F8EDE8;">
+                                                    <a href="https://www.facebook.com/"><i class="bi bi-facebook" style="font-size: 10pt; color: #4E220E;"></i></a>
+                                                </button>
+                                            
+                                                <button type="button" class="btn btncircle mx-2" style="background-color: #F8EDE8;">
+                                                    <a href="https://twitter.com/"><i class="bi bi-twitter" style="font-size: 10pt; color: #4E220E;"></i></a>
+                                                </button>
+                                            
+                                                <button type="button" class="btn btncircle mx-2" style="background-color: #F8EDE8;">
+                                                    <a href="https://accounts.google.com/">
+                                                        <i class="bi bi-google" style="font-size: 10pt; color: #4E220E;"></i></a>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <!--end of modal footer-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end of modal-->
+                    </div>
+                    <div class="col-lg-1 d-flex justify-content-center mx-2 my-1">
+                        <a href="signUp_page.html" class="logBttn"><button type="button" class="form-control btn joinBttn rounded-0">Join Us</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--end of navbar-->
+
+    <!--start of carousel-->
+    <div class="container-fluid justify-content-center" style="background-color: #FFECE3">
+        <div class="row">
+            <div class="col p-0">
+                <div class="container-fluid max-height p-0">
+                    <div id="lgbtCarousel" class="carousel slide carousel-light" data-bs-interval="2000" data-bs-rise="carousel">
+
+                        <!--indicator-->
+                        <div class="carousel-indicators">
+                            <button type="button"
+                            data-bs-target="#lgbtCarousel"
+                            data-bs-slide-to="0"
+                            class="active"
+                            aria-current="true"
+                            aria-label="Slide 1">
+                            </button>
+
+                            <button type="button"
+                            data-bs-target="#lgbtCarousel"
+                            data-bs-slide-to="1"
+                            aria-current="false"
+                            aria-label="Slide 2">
+                            </button>
+
+                            <button type="button"
+                            data-bs-target="#lgbtCarousel"
+                            data-bs-slide-to="2"
+                            aria-current="false"
+                            aria-label="Slide 3">
+                            </button>
+                        </div>
+
+                    <div class="carousel-inner">
+                        <center>
+                            <div class="carousel-item active">
+                                <img src="1-carousel.png" class="d-block" style="width: 75%;">
+                            </div>
+
+                            <div class="carousel-item active">
+                                <img src="2-carousel.png" class="d-block" style="width: 75%;">
+                            </div>
+
+                            <div class="carousel-item active">
+                                <img src="3-carousel.png" class="d-block" style="width: 75%;">
+                            </div>
+                        </center>
+                    </div>
+
+                    <!--controls-->
+                    <button class="carousel-control-prev" 
+                            type="button"  
+                            data-bs-target="#lgbtCarousel" 
+                            data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"
+                              aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" 
+                            type="button"  
+                            data-bs-target="#lgbtCarousel" 
+                            data-bs-slide="next">
+                        <span class="carousel-control-next-icon"
+                              aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end of carousel-->
+    <!--start of accordion and cards-->
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-md-3 my-5 mx-auto align-items-center justify-content-center"> <!--start of accordion-->
+                <h2 class="display-6 text-center">BOOK CATEGORIES <br>🏳️‍🌈</h2>
+                <div class="row">
+                    <div class="accordion" id="lgbtAccordion">
+                        <div class="accordion-item"><!--accordion 1-->
+                            <h2 class="accordion-header" id="headingOne"> <!--a-header-->
+                                <button class="accordion-button collapsed btnAccord"
+                                        type="button"
+                                        data-bs-toggle="collapsed"
+                                        data-bs-target="#accordBody1"
+                                        aria-expanded="true"
+                                        aria-controls="accordBody1">
+                                         <i class="bi bi-book fst-normal"> 
+                                            Fiction Novels</i>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapsed"
+                                 id="accordBody1"
+                                 aria-labelledby="headingOne"
+                                 data-bs-parent="#lgbtAccordion">
+                                 
+                                 <div class="accordion-body" style="background-color:#FFECE3;">
+                                    <p><a class="accordLinks" href="fiction_Action.html">Action</a></p>
+                                    <p><a class="accordLinks" href="fiction_Adventure.html">Adventure</a></p>
+                                    <p><a class="accordLinks" href="fiction_Comedy.html">Comedy/Humorous</a></p>
+                                    <p><a class="accordLinks" href="fiction_Fantasy.html">Fantasy</a></p>
+                                    <p><a class="accordLinks" href="fiction_HorrorThri.html">Horror/Thriller</a></p>
+                                    <p><a class="accordLinks" href="fiction_Mystery.html">Mystery</a></p>
+                                    <p><a class="accordLinks" href="fiction_Paranormal.html">Paranormal</a></p>
+                                    <p><a class="accordLinks" href="fiction_Romance.html">Romance</a></p>
+                                    <p><a class="accordLinks" href="fiction_ScienceFic.html">Science Fiction</a></p>
+                                    <p><a class="accordLinks" href="fiction_YoungAdult.html">Young Adult</a></p>
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item"><!--accordion 2-->
+                            <h2 class="accordion-header" id="headingTwo"> <!--a-header-->
+                                <button class="accordion-button collapsed btnAccord"
+                                        type="button"
+                                        data-bs-toggle="collapsed"
+                                        data-bs-target="#accordBody2"
+                                        aria-expanded="false"
+                                        aria-controls="accordBody2">
+                                         <i class="bi bi-book fst-normal"> 
+                                            Non-Fiction Novels</i>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapsed"
+                                 id="accordBody2"
+                                 aria-labelledby="headingTwo"
+                                 data-bs-parent="#lgbtAccordion">
+                                 
+                                 <div class="accordion-body" style="background-color:#FFECE3;">
+                                    <p><a class="accordLinks" href="nonfic_AutoBio.html">Auto-Biography</a></p>
+                                    <p><a class="accordLinks" href="nonfic_Memoir.html">Memoir</a></p>
+                                    <p><a class="accordLinks" href="nonfic_TrueCrime.html">True Crime</a></p>
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item"><!--accordion 3-->
+                            <h2 class="accordion-header" id="headingThree"> <!--a-header-->
+                                <button class="accordion-button collapsed btnAccord"
+                                        type="button"
+                                        data-bs-toggle="collapsed"
+                                        data-bs-target="#accordBody3"
+                                        aria-expanded="false"
+                                        aria-controls="accordBody3">
+                                         <i class="bi bi-book fst-normal"> 
+                                            Fan-Fiction Novels</i>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapsed"
+                                 id="accordBody3"
+                                 aria-labelledby="headingThree"
+                                 data-bs-parent="#lgbtAccordion">
+                                 
+                                 <div class="accordion-body" style="background-color:#FFECE3;">
+                                    <p><a class="accordLinks" href="fanfic_Movies.html">Movies</a></p>
+                                    <p><a class="accordLinks" href="fanfic_TVshows.html">TV Shows</a></p>
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item"><!--accordion 4-->
+                            <h2 class="accordion-header" id="headingFour"> <!--a-header-->
+                                <button class="accordion-button collapsed btnAccord"
+                                        type="button"
+                                        data-bs-toggle="collapsed"
+                                        data-bs-target="#accordBody4"
+                                        aria-expanded="false"
+                                        aria-controls="accordBody4">
+                                         <i class="bi bi-book fst-normal"> 
+                                            Manga & Graphic Novels</i>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapsed"
+                                 id="accordBody4"
+                                 aria-labelledby="headingFour"
+                                 data-bs-parent="#lgbtAccordion">
+                                 
+                                 <div class="accordion-body" style="background-color:#FFECE3;">
+                                    <p><a class="accordLinks" href="mangraph_Manga.html">Manga Books</a></p>
+                                    <p><a class="accordLinks" href="mangraph_Graphic.html">Graphic Novels</a></p>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-9"><!--start of cards-->
+                <center>
+
+                    <div class="row"><!--first row-->
+                        
+                        <!--Card 1-->
+                        <div class="col-6 col-sm-3 mb-4">
+                            <div class="card h-100 cardhover mt-5 border-0" style="background-color: #f4d1c1; color: white;">
+                                <img src="action.jpg" class="card-img img-fluid">
+                                <div class="card-body cardhover">
+                                    <h5 class="card-title">BOOK CATERGORY</h5>
+                                    <p class="card-subtitle mb-5" style="color: #856241; opacity: 0.8;">OpenSpace</p>
+                                    <p class="card-text">Here's some LGBT Action genre for you, check our
+                                    collection in Fiction Books.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="fiction_Action.html" style="color: #4E220E;" class=" btn-outline-light">
+                                        <button type="button" class="btn justify-content-center align-text-bottom cardBtn">
+                                            Fiction Novels
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>  
+                        </div>
+
+                        <!--Card 2-->
+                        <div class="col-6 col-sm-3 mb-4">
+                            <div class="card h-100 cardhover mt-5 border-0" style="background-color: #f4d1c1; color: white;">
+                                <img src="adventure.jpg" class="card-img img-fluid">
+                                <div class="card-body cardhover">
+                                    <h5 class="card-title">BOOK CATERGORY</h5>
+                                    <p class="card-subtitle mb-5" style="color: #856241; opacity: 0.8;">OpenSpace</p>
+                                    <p class="card-text">Here's some LGBT Adventure genre for you, check our
+                                    collection in Fiction Novels.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="fiction_Action.html" style="color: #4E220E;" class="btn-outline-light">
+                                        <button type="button" class="btn justify-content-center align-text-bottom cardBtn">
+                                            Fiction Novels
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Card 3-->
+                        <div class="col-6 col-sm-3 mb-4">
+                            <div class="card h-100 cardhover mt-5 border-0" style="background-color: #f4d1c1; color: white;">
+                                <img src="comedy.jpg" class="card-img img-fluid">
+                                <div class="card-body cardhover">
+                                    <h5 class="card-title">BOOK CATERGORY</h5>
+                                    <p class="card-subtitle mb-5" style="color: #856241; opacity: 0.8;">OpenSpace</p>
+                                    <p class="card-text">Here's some LGBT Comedy/Humor genre for you, check our
+                                    collection in Fiction Books.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="fiction_Action.html" style="color: #4E220E;" class="btn-outline-light">
+                                        <button type="button" class="btn justify-content-center align-text-bottom cardBtn">
+                                            Fiction Novels
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Card 4-->
+                        <div class="col-6 col-sm-3 mb-4">
+                            <div class="card h-100 cardhover mt-5 border-0" style="background-color: #f4d1c1; color: white;">
+                                <img src="fantasy.jpg" class="card-img img-fluid">
+                                <div class="card-body cardhover">
+                                    <h5 class="card-title">BOOK CATERGORY</h5>
+                                    <p class="card-subtitle mb-5" style="color: #856241; opacity: 0.8;">OpenSpace</p>
+                                    <p class="card-text">Here's some LGBT Fantasy genre for you, check our
+                                    collection in Fiction Books.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="fiction_Action.html" style="color: #4E220E;" class="btn-outline-light">
+                                        <button type="button" class="btn justify-content-center align-text-bottom cardBtn">
+                                            Fiction Novels
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row"><!--second row-->
+                        
+                        <!--Card 5-->
+                        <div class="col-6 col-sm-3 mb-4">
+                            <div class="card h-100 cardhover mt-5 border-0" style="background-color: #f4d1c1; color: white;">
+                                <img src="horror-thriller.jpg" class="card-img img-fluid">
+                                <div class="card-body cardhover">
+                                    <h5 class="card-title">BOOK CATERGORY</h5>
+                                    <p class="card-subtitle mb-5" style="color: #856241; opacity: 0.8;">OpenSpace</p>
+                                    <p class="card-text">Here's some LGBT Horror/Thriller genre for you, check our
+                                    collection in Fiction Novels.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="fiction_Action.html" style="color: #4E220E;" class="btn-outline-light">
+                                        <button type="button" class="btn justify-content-center align-text-bottom cardBtn">
+                                            Fiction Novels
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Card 6-->
+                        <div class="col-6 col-sm-3 mb-4">
+                            <div class="card h-100 cardhover mt-5 border-0" style="background-color: #f4d1c1; color: white;">
+                                <img src="mystery.jpg" class="card-img img-fluid">
+                                <div class="card-body cardhover">
+                                    <h5 class="card-title">BOOK CATERGORY</h5>
+                                    <p class="card-subtitle mb-5" style="color: #856241; opacity: 0.8;">OpenSpace</p>
+                                    <p class="card-text">Here's some LGBT Mystery genre for you, check our
+                                    collection in Fiction Novels.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="fiction_Action.html" style="color: #4E220E;" class="btn-outline-light">
+                                        <button type="button" class="btn justify-content-center align-text-bottom cardBtn">
+                                            Fiction Novels
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!--Card 7-->
+                        <div class="col-6 col-sm-3 mb-4">
+                            <div class="card h-100 cardhover mt-5 border-0" style="background-color: #f4d1c1; color: white;">
+                                <img src="paranormal.jpg" class="card-img img-fluid">
+                                <div class="card-body cardhover">
+                                    <h5 class="card-title">BOOK CATERGORY</h5>
+                                    <p class="card-subtitle mb-5" style="color: #856241; opacity: 0.8;">OpenSpace</p>
+                                    <p class="card-text">Here's some LGBT Paranormal genre for you, check our
+                                    collection in Fiction Novels.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="fiction_Action.html" style="color: #4E220E;" class="btn-outline-light">
+                                        <button type="button" class="btn justify-content-center align-text-bottom cardBtn">
+                                            Fiction Novels
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Card 8-->
+                        <div class="col-6 col-sm-3 mb-4">
+                            <div class="card h-100 cardhover mt-5 border-0" style="background-color: #f4d1c1; color: white;">
+                                <img src="romance.jpg" class="card-img img-fluid">
+                                <div class="card-body cardhover">
+                                    <h5 class="card-title">BOOK CATERGORY</h5>
+                                    <p class="card-subtitle mb-5" style="color: #856241; opacity: 0.8;">OpenSpace</p>
+                                    <p class="card-text">Here's some LGBT Romance genre for you, check our
+                                    collection in Fiction Books.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="fiction_Action.html" style="color: #4E220E;" class="btn-outline-light">
+                                        <button type="button" class="btn justify-content-center align-text-bottom cardBtn">
+                                            Fiction Novels
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row"><!--third row-->
+                        
+                        <!--Card 9-->
+                        <div class="col-6 col-sm-3 mb-4">
+                            <div class="card h-100 cardhover mt-5 border-0" style="background-color: #f4d1c1; color: white;">
+                                <img src="science fiction.jpg" class="card-img img-fluid">
+                                <div class="card-body cardhover">
+                                    <h5 class="card-title">BOOK CATERGORY</h5>
+                                    <p class="card-subtitle mb-5" style="color: #856241; opacity: 0.8;">OpenSpace</p>
+                                    <p class="card-text">Here's some LGBT Science Fiction genre for you, check our
+                                    collection in Fiction Books.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="fiction_Action.html" style="color: #4E220E;" class="btn-outline-light">
+                                        <button type="button" class="btn justify-content-center align-text-bottom cardBtn">
+                                            Fiction Novels
+                                        </button>
+                                    </a> 
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Card 10-->
+                        <div class="col-6 col-sm-3 mb-4">
+                            <div class="card h-100 cardhover mt-5 border-0" style="background-color: #f4d1c1; color: white;">
+                                <img src="young adult.jpg" class="card-img img-fluid">
+                                <div class="card-body cardhover">
+                                    <h5 class="card-title">BOOK CATERGORY</h5>
+                                    <p class="card-subtitle mb-5" style="color: #856241; opacity: 0.8;">OpenSpace</p>
+                                    <p class="card-text">Here's some LGBT Young Adult genre for you, check our
+                                    collection in Fiction Novels.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="fiction_Action.html" style="color: #4E220E;" class="btn-outline-light">
+                                        <button type="button" class="btn justify-content-center align-text-bottom cardBtn">
+                                            Fiction Novels
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Card 11-->
+                        <div class="col-6 col-sm-3 mb-4">
+                            <div class="card h-100 cardhover mt-5 border-0" style="background-color: #f4d1c1; color: white;">
+                                <img src="auto biography.jpg" class="card-img img-fluid">
+                                <div class="card-body cardhover">
+                                    <h5 class="card-title">BOOK CATERGORY</h5>
+                                    <p class="card-subtitle mb-5" style="color: #856241; opacity: 0.8;">OpenSpace</p>
+                                    <p class="card-text">Here's some LGBT Auto-Biography genre for you, check our
+                                    collection in Non Fiction Books.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="nonfic_AutoBio.html" style="color: #4E220E;" class="btn-outline-light">
+                                        <button type="button" class="btn justify-content-center align-text-bottom cardBtn">
+                                            Non Fiction Novels
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                         
+                        <!--Card 12-->
+                        <div class="col-6 col-sm-3 mb-4">
+                            <div class="card h-100 cardhover mt-5 border-0" style="background-color: #f4d1c1; color: white;">
+                                <img src="memoir.jpg" class="card-img img-fluid">
+                                <div class="card-body cardhover">
+                                    <h5 class="card-title">BOOK CATERGORY</h5>
+                                    <p class="card-subtitle mb-5" style="color: #856241; opacity: 0.8;">OpenSpace</p>
+                                    <p class="card-text">Here's some LGBT Memoir genre for you, check our
+                                    collection in Non Fiction Books.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="nonfic_AutoBio.html" style="color: #4E220E;" class="btn-outline-light">
+                                        <button type="button" class="btn justify-content-center align-text-bottom cardBtn">
+                                            Non Fiction Novels
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row"><!--fourth row-->
+                        
+                        <!--Card 13-->
+                        <div class="col-6 col-sm-3 mb-4">
+                            <div class="card h-100 cardhover mt-5 border-0" style="background-color: #f4d1c1; color: white;">
+                                <img src="true crime.jpg" class="card-img img-fluid">
+                                <div class="card-body cardhover">
+                                    <h5 class="card-title">BOOK CATERGORY</h5>
+                                    <p class="card-subtitle mb-5" style="color: #856241; opacity: 0.8;">OpenSpace</p>
+                                    <p class="card-text">Here's some LGBT True Crime genre for you, check our
+                                    collection in Non Fiction Books.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="nonfic_AutoBio.html" style="color: #4E220E;" class="btn-outline-light">
+                                        <button type="button" class="btn justify-content-center align-text-bottom cardBtn">
+                                            Non Fiction Novels
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Card 14-->
+                        <div class="col-6 col-sm-3 mb-4">
+                            <div class="card h-100 cardhover mt-5 border-0" style="background-color: #f4d1c1; color: white;">
+                                <img src="fanfiction-movies.jpg" class="card-img img-fluid">
+                                <div class="card-body cardhover">
+                                    <h5 class="card-title">BOOK CATERGORY</h5>
+                                    <p class="card-subtitle mb-5" style="color: #856241; opacity: 0.8;">OpenSpace</p>
+                                    <p class="card-text">Here's some LGBT Movies fanfic genre for you, check our
+                                    collection in Fan-Fiction Books.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="fanfic_Movies.html" style="color: #4E220E;" class="btn-outline-light">
+                                        <button type="button" class="btn justify-content-center align-text-bottom cardBtn">
+                                            Fan Fiction Books
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Card 15-->
+                        <div class="col-6 col-sm-3 mb-4">
+                            <div class="card h-100 cardhover mt-5 border-0" style="background-color: #f4d1c1; color: white;">
+                                <img src="fanfiction-tvshows.jpg" class="card-img img-fluid">
+                                <div class="card-body cardhover">
+                                    <h5 class="card-title">BOOK CATERGORY</h5>
+                                    <p class="card-subtitle mb-5" style="color: #856241; opacity: 0.8;">OpenSpace</p>
+                                    <p class="card-text">Here's some LGBT TV series fanfic genre for you, check our
+                                    collection in Fan-Fiction Books.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="fanfic_Movies.html" style="color: #4E220E;" class="btn-outline-light">
+                                        <button type="button" class="btn justify-content-center align-text-bottom cardBtn">
+                                            Fan Fiction Novels
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Card 16-->
+                        <div class="col-6 col-sm-3 mb-4">
+                            <div class="card h-100 cardhover mt-5 border-0" style="background-color: #f4d1c1; color: white;">
+                                <img src="manga-graphic.jpg" class="card-img img-fluid">
+                                <div class="card-body cardhover">
+                                    <h5 class="card-title">BOOK CATERGORY</h5>
+                                    <p class="card-subtitle mb-5" style="color: #856241; opacity: 0.8;">OpenSpace</p>
+                                    <p class="card-text">Here's some LGBT Manga & Graphic in all genre for you, check our
+                                    collection in Manga & Graphic Books.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="mangraph_Manga.html" style="color: #4E220E;" class="btn-outline-light">
+                                        <button type="button" class="btn justify-content-center align-text-bottom cardBtn">
+                                            Manga & Graphic Novels
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                </center>
+            </div><!--end of cards-->
+
+        </div>
+    </div>
+    <!--end of accordion and cards-->
+    <br><br>
+    <!--sneak peek of about page-->
+    <div class="container-fluid mb-5">
+        <div class="row align-items-center" style="background-color: #FFECE3;">
+            <div class="col-sm-6">
+                <center><img src="home-about.png" class="rounded-circle" style="width: 75%;"></center>
+            </div>
+            <div class="col-md-6">
+                <h1 class="display-3 mt-2 text-center"><b style="color:#4E220E;
+                 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Open Space</b></h1>
+                <p class="text-start">
+                    Greetings from OpenSpace! A website that is safe for all the LGBTQIA+ community where they 
+                    can read, write, and discuss books related to their interests. <a href="about_page.html"
+                    style="color: #4E220E;"><u>read more</u></a>
+                </p>
+                <h4 class="mt-5 text-center fst-italic" style="color:#4E220E;">WHAT IS THE LGBTQIA+ COMMUNITY?</h4>
+                <p class="text-start">
+                    The <b style="color: red;">LGBT</b> community is a loosely defined grouping of <b style="color: orange;">lesbian</b>, 
+                    <b style="color:yellow;">gay</b>, <b style="color: green;">bisexual</b>, <b style="color:blue;">transgender</b>, 
+                    and <b style="color: indigo;">other queer</b> individuals united by a common culture and social movements. These 
+                    <b style="color: violet;">communities</b> generally celebrate pride, diversity, individuality, and sexuality.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--sneak peek of about page-->
+    <!--start of footer-->
+    <footer style="background-color: #F8E0D5;">
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-sm-12 col-md-3">
+                    <img src="footer-logo.png" class="my-3 mx-2" style="width: 170px;">
+                    <p class="text-justify mx-2">OpenSpace is a website where anyone part of the LGBTQIA+ community and an ally to the community, 
+                        may write, read, and discuss their favorite literature. Try and visit us to learn more.
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md mt-3">
+                    <h5 class="mx-4">Useful Links</h5>
+                    <ul style="list-style-type: none;">
+                        <li><i class="bi bi-bookmark-heart fst-normal"> <a href="indexMain_page.html" class="ftrlinks">Home</a></i></li>
+                        <li><i class="bi bi-bookmark-heart fst-normal"> <a href="about_page.html" class="ftrlinks">About Us</a></i></li>
+                        <li><i class="bi bi-bookmark-heart fst-normal"> <a href="community_page.html" class="ftrlinks">Community</a></i></li>
+                        <li><i class="bi bi-bookmark-heart fst-normal"> <a href="all-books.html" class="ftrlinks">Books</a></i></li>
+                        <li><i class="bi bi-bookmark-heart fst-normal"> <a href="siteMap_page.html" class="ftrlinks">Sitemap</a></i></li>
+                        <li><i class="bi bi-bookmark-heart fst-normal"> <a href="termsAndCon_page.html" class="ftrlinks">Terms and Condition</a></i></li>
+                        <li><i class="bi bi-bookmark-heart fst-normal"> <a href="privacyPolicy_page.html" class="ftrlinks">Privacy Policy</a></i></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-3">
+                    <h5 class="mx-4">Book Categories</h5>
+                    <ul style="list-style-type: none;">
+                        <li><i class="bi bi-bookmark-heart fst-normal"> <a href="fiction_Action.html" class="ftrlinks">Fiction Books</a></i></li>
+                        <li><i class="bi bi-bookmark-heart fst-normal"> <a href="nonfic_AutoBio.html" class="ftrlinks">Non Fiction Books</a></i></li>
+                        <li><i class="bi bi-bookmark-heart fst-normal"> <a href="fanfic_Movies.html" class="ftrlinks">Fan Fiction Books</a></i></li>
+                        <li><i class="bi bi-bookmark-heart fst-normal"> <a href="mangraph_Manga.html" class="ftrlinks">Manga & Graphic Books</a></i></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-3">
+                    <h5 class="mx-2 opacity-75 text-center">Connect with us</h5>
+                    <section class="text-center">
+                        <a href="https://www.facebook.com/" role="button" class="btn m-1" style="background-color: #3b5998; border-radius: 50%;">
+                            <i class="bi bi-facebook" style="font-size: 20pt; color: white;"></i></a>
+                        <a href="https://twitter.com/" role="button" class="btn m-1" style="background-color: #55acee; border-radius: 50%;">
+                            <i class="bi bi-twitter" style="font-size: 20pt; color: white;"></i></a>
+                        <a href="https://www.instagram.com/" role="button" class="btn m-1" style="background-color: #ac2bac; border-radius: 50%;">
+                            <i class="bi bi-instagram" style="font-size: 20pt; color: white;"></i></a>
+                        <a href="https://www.google.com/intl/fil/gmail/about/" role="button" class="btn m-1" style="background-color: #dd4b39; border-radius: 50%;">
+                            <i class="bi bi-google" style="font-size: 20pt; color: white;"></i></a>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <h5 class="text-center mt-2">Register for free <a href="signUp_page.html" class="btn-outline-light"><button type="button" class="btn signupftr mx-auto">
+            Sign Up</button></a></h5>
+        <hr class="mb-0">
+        <div class="text-center p-3" style="color: #4E220E; background-color: #ffece3;">
+            <i class="bi bi-c-circle"> 2022 All Rights Reserved: OpenSpace</i><br><br>
+            <i class="fw-light">Created by: ALOVERA, TOLENTINO, SUMAYAN, MARAVILLA </i>
+        </div>
+    </footer>
+    <!--end of footer-->
+</body>
+</html>

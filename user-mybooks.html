@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenShelf</title>
+
+    <!--ONLINE CSS-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+		  rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+		  crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./css/second stylesheet.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+		    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+		    crossorigin="anonymous">
+    </script>
+    
+    <!--ICON ON TITLE BAR-->
+	<link rel="shortcut icon" href="logo.ico" type="image/x-icon"/>
+
+    <!--ICONS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+</head>
+<body style="background-color:#F8EDE8;">
+    <!--start of navbar-->
+        <div class="container-fluid" style="background-color:#F8E0D5;">
+            <div class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="indexMain_page.html">
+                    <img src="website logo.png" style="width: 170px;">
+                </a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#NavBarMenu">
+                    <span class="navbar-toggler-icon">
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="NavBarMenu">
+                    <ul class="navbar-nav text-center me-3 ms-3 my-1" style="font-size: 12pt;">
+                        <li class="nav-item">
+                            <a class="nav-link nabvrButton" href="indexMain_page.html">Home</a>
+                        </li> 
+                        <li class="nav-item">
+                            <a class="nav-link nabvrButton" href="user-mybooks.html">OpenShelf</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle nabvrButton" href="#" role="button" 
+                            data-bs-toggle="dropdown" aria-expanded="false">Book Categories</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item nabvrButton" href="all-books.html">All Books📚</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item nabvrButton" href="fiction_Action.html">Fiction Books📕</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item nabvrButton" href="nonfic_AutoBio.html">Non-Fiction Books📙</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item nabvrButton" href="fanfic_Movies.html">Fan-Fiction Books📗</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item nabvrButton" href="mangraph_Manga.html">Manga/Graphic Books📘</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nabvrButton" href="community_page.html">Community</a>
+                        </li>
+                    </ul>
+                    
+                    <form class="input-group d-lg-flex justify-content-center w-75 mx-auto srchbar" role="search">
+                        <input type="text" class="form-control border-0 rounded-0" placeholder="Books, Authors, Community, etc." aria-label="Search">
+                        <button type="text" class="srh"><i class="bi bi-search"></i></button>
+                    </form>
+
+                    <ul class="navbar-nav text-center me-3 ms-3 my-1">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle nabvrButton" href="#" role="button" 
+                            data-bs-toggle="dropdown" aria-expanded="false"><img src="notification-icon.png" style="width:35px;"></a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <h6 class="dropdown-header">NOTIFICATIONS</h6>
+                                <a class="dropdown-item nabvrButton" href="" style="font-size: small;">View all notification</a>
+                                <li class="dropdown-divider">
+                                    <!--none-->
+                                </li>
+                                <p class="text-center">No Notification</p>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle nabvrButton" href="#" role="button" 
+                            data-bs-toggle="dropdown" aria-expanded="false"><img src="user-profilepic.png" style="width:35px;"></a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <h6 class="dropdown-header">USER</h6>
+                                <li>
+                                    <a class="dropdown-item nabvrButton" href="userprofile_page.html">Profile</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item nabvrButton" href="#">Friends</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item nabvrButton" href="user-mybooks.html">OpenShelf</a>
+                                </li>
+                                <li class="dropdown-divider">
+                                    <!--none-->
+                                </li>
+                                <li>
+                                    <a class="dropdown-item nabvrButton" href="#">Sign Out</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+    <!--end of navbar-->
+    <!-- User's space shelf -->
+    <iframe src="all-books.html" frameborder="0" style="display: none;"></iframe>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+              <br><h4>My Books</h4>  
+            </div>
+            <div class="col-md-9">
+                <!-- <br><form class="input-group d-lg-flex mx-auto srchbar w-25" role="search">
+                    <input type="text" class="form-control form-control-sm border-0 rounded-0 " placeholder="Search books" aria-label="Search">
+                    <button type="text" class="srh"><i class="bi bi-search"></i></button>
+                </form> -->
+            </div>
+        </div>
+        <hr>
+        <div class="table col-12">
+            <br>
+            <div class="row">
+                <div class="col">
+                    Cover
+                </div>
+                <div class="col">
+                    Title
+                </div>
+                <div class="col">
+                    Author
+                </div>
+                <div class="col">
+                    Date Added
+                </div>
+            </div>
+            <hr>
+            <div class="col-12">
+                <div class="row" id="books_in_shelf">
+                    <div class="col">
+                        <img src="" class="coverDisplay"></img>
+                    </div>
+                    <div class="col">
+                        <span class="titleDisplay"></span>
+                    </div>
+                    <div class="col">
+                        <span class="authorDisplay"></span>
+                    </div>
+                    <div class="col ms-1">
+                        <span class="dateDisplay"></span>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- User's space shelf -->
+    <!--start of footer-->
+    <footer style="background-color: #F8E0D5;">
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-sm-12 col-md-3">
+                    <img src="footer-logo.png" class="my-3 mx-2" style="width: 170px;">
+                    <p class="text-justify mx-2">OpenSpace is a website where anyone part of the LGBTQIA+ community and an ally to the community, 
+                        may write, read, and discuss their favorite literature. Try and visit us to learn more.
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md mt-3">
+                    <h5 class="mx-4">Useful Links</h5>
+                    <ul style="list-style-type: none;">
+                        <li><i class="bi bi-bookmark-heart fst-normal"> <a href="indexMain_page.html" class="ftrlinks">Home</a></i></li>
+                        <li><i class="bi bi-bookmark-heart fst-normal"> <a href="about_page.html" class="ftrlinks">About Us</a></i></li>
+                        <li><i class="bi bi-bookmark-heart fst-normal"> <a href="community_page.html" class="ftrlinks">Community</a></i></li>
+                        <li><i class="bi bi-bookmark-heart fst-normal"> <a href="all-books.html" class="ftrlinks">Books</a></i></li>
+                        <li><i class="bi bi-bookmark-heart fst-normal"> <a href="siteMap_page.html" class="ftrlinks">Sitemap</a></i></li>
+                        <li><i class="bi bi-bookmark-heart fst-normal"> <a href="termsAndCon_page.html" class="ftrlinks">Terms and Condition</a></i></li>
+                        <li><i class="bi bi-bookmark-heart fst-normal"> <a href="privacyPolicy_page.html" class="ftrlinks">Privacy Policy</a></i></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-3">
+                    <h5 class="mx-4">Book Categories</h5>
+                    <ul style="list-style-type: none;">
+                        <li><i class="bi bi-bookmark-heart fst-normal"> <a href="fiction_Action.html" class="ftrlinks">Fiction Books</a></i></li>
+                        <li><i class="bi bi-bookmark-heart fst-normal"> <a href="nonfic_AutoBio.html" class="ftrlinks">Non Fiction Books</a></i></li>
+                        <li><i class="bi bi-bookmark-heart fst-normal"> <a href="fanfic_Movies.html" class="ftrlinks">Fan Fiction Books</a></i></li>
+                        <li><i class="bi bi-bookmark-heart fst-normal"> <a href="mangraph_Manga.html" class="ftrlinks">Manga & Graphic Books</a></i></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-3">
+                    <h5 class="mx-2 opacity-75 text-center">Connect with us</h5>
+                    <section class="text-center">
+                        <a href="https://www.facebook.com/" role="button" class="btn m-1" style="background-color: #3b5998; border-radius: 50%;">
+                            <i class="bi bi-facebook" style="font-size: 20pt; color: white;"></i></a>
+                        <a href="https://twitter.com/" role="button" class="btn m-1" style="background-color: #55acee; border-radius: 50%;">
+                            <i class="bi bi-twitter" style="font-size: 20pt; color: white;"></i></a>
+                        <a href="https://www.instagram.com/" role="button" class="btn m-1" style="background-color: #ac2bac; border-radius: 50%;">
+                            <i class="bi bi-instagram" style="font-size: 20pt; color: white;"></i></a>
+                        <a href="https://www.google.com/intl/fil/gmail/about/" role="button" class="btn m-1" style="background-color: #dd4b39; border-radius: 50%;">
+                            <i class="bi bi-google" style="font-size: 20pt; color: white;"></i></a>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <h5 class="text-center mt-2">Register for free <a href="signUp_page.html" class="btn-outline-light"><button type="button" class="btn signupftr mx-auto">
+            Sign Up</button></a></h5>
+        <hr class="mb-0">
+        <div class="text-center p-3" style="color: #4E220E; background-color: #ffece3;">
+            <i class="bi bi-c-circle"> 2022 All Rights Reserved: OpenSpace</i><br><br>
+            <i class="fw-light">Created by: Margus Odette H. Alovera</i>
+        </div>
+    </footer>
+    <!--end of footer-->
+</body>
+<!-- Add to Space JS -->
+<script src="./js/user-mybooks.js"></script>
+<script src="./js/user-mybook2.js"></script>
+</html>

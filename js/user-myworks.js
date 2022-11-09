@@ -188,4 +188,3 @@ function showProfilePic() {
 
 // function editProfilePic () {
 //     picDisplay.innerHTML =  editPic.innerHTML;
-// }

@@ -75,4 +75,3 @@ const resetComment = function () {
 // const reloadPage = function () {
 //     location.reload();
 // }
-

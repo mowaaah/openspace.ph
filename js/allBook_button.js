@@ -1416,3 +1416,4 @@ function change230() {
 	document.getElementById("btn_change230").style.color = "#4E220E";
 	document.getElementById("btn_change230").style.borderColor = "#4E220E";
 }
+

@@ -22,8 +22,8 @@ function addToSpace ( ) {
     localStorage.setItem("title", JSON.stringify (bookTitle));
     localStorage.setItem("author", bookAuthor);
     localStorage.setItem("date", date)
-imgData = getBase64Image(bookCover);
-localStorage.setItem("imgData", imgData);
+    imgData = getBase64Image(bookCover);
+    localStorage.setItem("imgData", imgData);
     console.log(bookTitle);
     console.log(bookAuthor);
     console.log(bookCover);
